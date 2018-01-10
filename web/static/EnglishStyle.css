@@ -1,0 +1,187 @@
+
+
+/*-----------------------------导航-----------------------------*/
+
+.n-menu{
+    /*font-size:24px;*/
+    font-size:14px;/*英文下缩小字号*/
+}
+.n-menu li{
+    /*background-color: #996b6d;*/
+    border-bottom:2px solid transparent;
+    margin:0 10px;/*英文下缩小间距*/
+}
+
+.navbar-default .container{
+    /*background-color: yellow;*/
+    width: 1080px!important;
+}
+
+.navbar-default .container .n-logo{
+    display: inline-block;
+    font-size: 14px; /*英文下缩小间距*/
+}
+
+
+.navbar-default .pull-left{
+    /*background-color: yellowgreen;*/
+    height: 100%;
+    /*padding-top: 3px;*/
+    padding-bottom: 7px;
+    margin-left: 100px;
+    /*width: 22%;*/
+    /*width: 237px;*/
+}
+
+.navbar-default .pull-left img{
+    width: 42px;
+    height: 33px;
+}
+
+.navbar-default .pull-right{
+    /*background-color: rebeccapurple;*/
+    margin-right: 100px;
+    /*width: 78%;*/
+    /*width: 843px;*/
+}
+
+.n-footer small{
+    font-size: 13px;
+}
+
+.n-footer h6,.n-footer a{
+    font-size: 14px;
+}
+
+.n-footer .n-footerLogo h3 img{
+    width: 42px;
+    height: 33px;
+}
+
+
+.n-footer .n-footerLogo>h3{
+    font-size: 14px;
+}
+
+/*二维码*/
+.n-footer .n-table .footer-img {
+    /*background-color: yellowgreen;*/
+    width: 300px;
+
+}
+.n-footer .n-table .footer-img img{
+    /*background-color: yellowgreen;*/
+    width: 100px;
+    height: 100px;
+}
+/*-----------------------------导航-----------------------------*/
+
+/*-----------------------------标签字体-----------------------------*/
+
+body{
+    font-size:18px;
+    font-family:  Arial,Helvetica, sans-serif;
+}
+
+h1, .h1 {
+    /*font-size:48px;*/
+    /*font-size:36px; !*英文下缩小字号*!*/
+    font-size:26px;
+}
+
+h2, .h2 {
+    font-size:22px;
+}
+h3, .h3 {
+    font-size:18px;
+}
+
+h4, .h4{
+    font-size: 14px;
+}
+
+h6{
+    font-size:12px;
+}
+small{
+    font-size:9px;
+}
+
+.n-yj{
+    padding:25px 20px;
+    font-size: 19px;
+}
+
+/*-----------------------------标签字体-----------------------------*/
+
+.n-banner{
+    /*background-color: yellow;*/
+    height:350px;
+    /*<!--隐藏视频部分-->*/
+    /*height:900px;  !*修改n-banner部分整体高度*!*/
+}
+
+.n-banner-font {
+    /*background-color: green;*/
+    /*margin-top: 60px;*/
+}
+
+.n-banner-font .downloadPDF{
+    /*background-color: green;*/
+    margin-top: 60px;
+}
+
+
+.n-mb5{
+    /*background-color: yellowgreen;*/
+    margin-bottom: 0;
+    /*margin-top: 100px;*/
+}
+
+
+/*发展*/
+.n-develop{
+    margin:0 auto;
+    width:755px;
+    background:url(../images/line.gif) repeat-y 189px;
+}
+.n-develop dl dd:nth-child(2){
+    /*background-color: yellow;*/
+    width:50px !important;/*英文状态下修改*/
+
+}
+
+
+.n-develop dl dt{
+    /*background-color: yellowgreen;*/
+    width:165px;
+    text-align: right;
+}
+
+
+dl.n-table >dd>span {
+    /*background-color: yellowgreen;*/
+    display: inline-block;
+    /*background-color: #3b2e76;*/
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

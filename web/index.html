@@ -1,1269 +1,1515 @@
 <!DOCTYPE html>
-<!-- saved from url=(0021)http://www.show.one/# -->
-<html class=" js no-touch js opacity generatedcontent pointerevents" lang="zh" style="">
+<html lang="en">
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-        <meta content="" name="description"/>
-        <meta content="" name="keywords"/>
-        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
-        <meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport"/>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta content="webkit" name="renderer"/>
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
         <title>
-            世界第一个基于区块链的分布式直播
+            DeepBrain Chain
         </title>
-        <!-- Styles -->
-        <link href="./static/core.min.css" rel="stylesheet"/>
-        <link href="./static/thesaas.min.css" rel="stylesheet"/>
-        <link href="./static/style.css" rel="stylesheet"/>
-        <link href="./static/component.css" rel="stylesheet" type="text/css"/>
-        <script src="./static/modernizr.custom.js">
-        </script>
-        <!-- custom -->
-        <link href="./static/custom.css" rel="stylesheet" type="text/css"/>
-        <script src="./static/modernizr.custom.js(1)" type="text/javascript">
-        </script>
-        <!-- Favicons -->
-        <link href="http://www.show.one/favicon.png" rel="icon"/>
+        <link href="./static/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./static/component.css" rel="stylesheet"/>
+        <link href="./static/style.css" rel="stylesheet" type="text/css"/>
+        <link href="./static/EnglishStyle.css" rel="stylesheet" type="text/css"/>
+        <link href="/Favicon.ico" mce_href="./Favicon.ico" rel="icon" type="image/x-icon"/>
+        <link href="./static/font_u4qz1594lnixusor.css" rel="stylesheet" type="text/css"/>
+        <!--<link rel="stylesheet" type="text/css" href="../video/css/common.css">-->
+        <link href="./static/detail_p.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .n-part-two{
+                 /*background-color: yellowgreen;*/
+                margin-top: 150px;
+            }
+            .n-part-one{
+                /*background-color: #00e6f5;*/
+            }
+            .n-banner{
+                /*background-color: yellowgreen;*/
+                /*height:400px;*/
+                /*<!--隐藏视频部分-->*/
+                height:980px;  /*修改n-banner部分整体高度*/
+            }
+        </style>
     </head>
 </html>
-<body class="body-scrolled" data-aos-delay="0" data-aos-duration="1500" data-aos-easing="ease">
-    <div style="display: none;">
-        <img src="./static/aa.png">
-        </img>
-    </div>
-    <style type="text/css">
-        #slideshow {
-      width:100%;
-      height:100%;
-      overflow:hidden;
-    }
-    #slideshow > div {
-      position: relative;
-      width:100%;
-      height:100%;
-      overflow:hidden;
-      top:0;
-      left:0;
-    }
-    #slideshow > div img{
-      width:100%;
-    }
-    </style>
-    <!--
-  <div id="slideshow">
-    <div>
-      <img src="images/top-img.jpg" style="width:100%">
-    </div>
-    <div>
-      <img src="images/top-img.jpg" style="width:100%">
-    </div>
-    <div>
-      <img src="images/top-img.jpg" style="width:100%">
-    </div>
-  </div>
-  -->
-    <div class="">
-        <img src="./static/top-img-cn.jpg" style="width:100%">
-        </img>
-    </div>
-    <!-- Header -->
-    <header class="header header-inverse h-fullscreen p-0 bg-primary overflow-hidden" style="background-image: linear-gradient(to right, #191919 100%, black 100%);">
-        <!-- Topbar -->
-        <nav class="topbar topbar-inverse topbar-expand-sm">
-            <div class="container">
-                <div class="topbar-left">
-                    <div class="top-menu-box">
-                        <a href="http://www.show.one/list.html" target="_blank">
-                            详情
-                        </a>
-                        |
-                        <a href="http://www.show.one/#">
-                            资讯
-                        </a>
-                        |
-                        <a href="http://www.show.one/job.html" target="_blank">
-                            招聘
-                        </a>
-                    </div>
-                </div>
-                <div class="topbar-right">
-                    <select class="btn btn-sm btn-outline btn-white" onchange="window.location=this.value;" style="background: #333; border: 1px solid #000; color: #FFFFFF; padding-left: 15px;padding-right: 10px;appearance:none;-moz-appearance:none;-webkit-appearance:none;">
-                        <option value="index.html">
-                            中文
-                        </option>
-                        <option value="en/index.html">
-                            EN
-                        </option>
-                        <option value="ja/index.html">
-                            日本語
-                        </option>
-                        <option value="ko/index.html">
-                            한국어
-                        </option>
-                    </select>
-                </div>
-            </div>
-        </nav>
-        <!-- END Topbar -->
-        <canvas class="constellation" height="450" width="1920">
-        </canvas>
-        <div class="container text-center">
-            <div class="row h-full align-items-center">
-                <div class="col-12 col-md-8 offset-md-2">
-                    <p class="top-logo">
-                        <img src="./static/aa.png">
-                        </img>
-                    </p>
-                    <h1 class="display-4 color-01">
-                        去中心化的互动式
-                        <br>
-                            直播分发平台
-                        </br>
-                    </h1>
-                    <p class="lead text-white fs-20 color-01" style="padding-left: 16%;padding-right: 16%;">
-                        Show.One是一个基于ETH区块链基础设施的互动式直播分发SAAS平台，人们可以在这里建立自己的去中心化直播， 比如：
-                    </p>
-                    <p class="lead fs-20" id="applications-typing" style="margin-bottom: 20px;">
-                        <span class="text-primary" data-type="600, 800, 1000, 1500, 300">
-                            电商
-                        </span>
-                        <span class="typed-cursor">
-                            |
-                        </span>
-                    </p>
-                    <section class="main">
-                        <div class="wrapper-demo">
-                            <div class="wrapper-dropdown-3" tabindex="1">
-                                <span>
-                                    <a href="http://www.show.one/pdf/ShowCoinwp.pdf" target="_blank">
-                                        白皮书 PDF
-                                    </a>
-                                </span>
-                                <a href="http://www.show.one/pdf/ShowCoinwp.pdf" target="_blank">
-                                </a>
-                            </div>
-                            <a href="http://www.show.one/pdf/ShowCoinwp.pdf" target="_blank">
-                                ​
-                            </a>
-                        </div>
-                        <a href="http://www.show.one/pdf/ShowCoinwp.pdf" target="_blank">
-                        </a>
-                    </section>
-                    <a href="http://www.show.one/pdf/ShowCoinwp.pdf" target="_blank">
-                        <p class="r-text color-02 col-12 col-md-10 offset-md-1 time-info" style="padding-left: 15%;padding-right: 15%;">
-                            截止2017年12月31日
-                            <br>
-                                18时18分18秒本次代币互换已结束
-                            </br>
-                        </p>
-                    </a>
-                    <h3>
-                        <a href="http://www.show.one/pdf/ShowCoinwp.pdf" target="_blank">
-                        </a>
-                        <a href="http://www.show.one/list.html" id="publish-link" target="_blank">
-                            查看详情
-                        </a>
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- END Header -->
-    <!-- Main container -->
-    <main class="main-content">
-        <!--
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Features
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !-->
-        <section class="section">
-            <div class="container text-center">
-                <h2 class="text-center color-02">
-                    Showcoin预计提前完成交易所登陆
-                </h2>
-                <p class="color-03" style="text-align:left;">
-                    刚刚完成基石份额代币互换的showcoin，已于本日18时18分18秒全部完成代币互换已全部结束，由于完成了货币互换的目标，showcoin预计提前完成交易所登陆。据了解，showcoin项目是基于ETH区块链基础设施的去中心化互动直播分发SAAS平台，项目团队由原微拍创始人、前花椒CEO胡震生带头组建，目前获得硬币资本、节点资本、星链资本等投资。
-                </p>
-                <p style="text-align:left; margin:0!important">
-                    2017-12-31 23:27:28
-                </p>
-                <p style="text-align:left;">
-                    重要程度：
-                    <img class="xing" src="./static/xing.png">
-                    </img>
-                </p>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container text-center">
-                <video autoplay="" controls="">
-                    <source src="video/CN.mp4" type="video/mp4">
-                    </source>
-                </video>
-            </div>
-        </section>
-        <section class="section bg-gray">
-            <div class="container">
-                <h2 class="text-center">
-                    我们解决什么问题
-                </h2>
-                <div class="row gap-y align-items-center">
-                    <div class="col-12 col-md-8 zhong">
-                        <h4>
-                            中心化内容发行方式到了被颠覆的时候
-                        </h4>
-                        <p>
-                            一个真正的点对点的直播互动系统，应该允许消费者直接付费和打赏给内容生产者，不需要经过一个“中心”。
-                        </p>
-                        <p>
-                            现在作为“中心”的大部分平台虽然运营良好，但这一切都是在高达70%的手续费基础之上来实现的。
-                        </p>
-                        <p>
-                            中心通常担负着直播评级和排行榜计算等涉及内容质量的定义和分发服务，因为没有公开透明的交易记录，而基于手续费抽成的中心经常通过虚拟货币的“超发”以获得额外收益，同时也使基于此的内容评审分发机制的公平公正变的不可能，丧失了数字互联网给人类带来的最大益处“便捷、高效、低成本”。
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-4" style="text-align: center;">
-                        <img class="rounded chart aos-init" data-aos="zoom-in" src="./static/01.png">
-                        </img>
-                    </div>
-                </div>
-                <hr>
-                    <div class="row gap-y align-items-center">
-                        <div class="col-12 col-md-4" style="text-align: center;">
-                            <img class="rounded chart aos-init" data-aos="zoom-in" src="./static/02.png">
-                            </img>
-                        </div>
-                        <div class="col-12 col-md-8 zhong">
-                            <h4>
-                                去中心化的方法重构体系内的利益分配
-                            </h4>
-                            <p>
-                                我们为解决此问题，在基于区块链和智能合约的技术之上，重新设计了一个基于加密的数字货币“秀币”。
-                            </p>
-                            <p>
-                                秀币及以其为经济基础的     分布式无中心的直播互动娱乐方案，可以让数字娱乐资产的发行的成本降到理论上的最低值。次级单位具有自治的特质，可以实现基于纳什均衡之下整个生态的平衡。
-                            </p>
-                            <p>
-                                在这个公开公平民主，任何人均可参与无中心的生态下，让每个生产者数字资产的收益最大化。
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                        <div class="row gap-y align-items-center">
-                            <div class="col-12 col-md-8 zhong">
-                                <h4>
-                                    新体系下的新内容
-                                </h4>
-                                <p>
-                                    在新的利益和内容质量定义下，内容生产者会从“乞讨”型转向专注于在线用户数，也就是内容本身，而垃圾直播会被彻底消灭。
-                                </p>
-                                <p>
-                                    传统的互动直播很难吸引高质量的内容生产者持续生产内容，例如明星、歌手、演出、专业的演出，而在新的利益分配机制下，他们会如鱼得水，会自然而然的把传统的高质量内容迁移到线上的互动式直播里面来。
-                                </p>
-                                <p>
-                                    同时，基于生态的衍变，更多的类型的内容生产者也会参与进来，例如礼物设计师、导演、编剧。
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-4" style="text-align: center;">
-                                <img class="rounded chart aos-init" data-aos="zoom-in" src="./static/003.png">
-                                </img>
-                            </div>
-                        </div>
-                        <hr>
-                            <div class="row gap-y align-items-center">
-                                <div class="col-12 col-md-4" style="text-align: center;">
-                                    <img class="rounded chart aos-init" data-aos="zoom-in" src="./static/004.png">
-                                    </img>
-                                </div>
-                                <div class="col-12 col-md-8 zhong">
-                                    <h4>
-                                        新体系下的新用户行为
-                                    </h4>
-                                    <p>
-                                        在基于区块链搭建的全新体系下，消费者从被动的参与者，变成整个生态的一部分，他们通过持有的代币通过观看时长为生产者打分，也通过传播内容以自动获得生产者的代币奖励从而变成内容发行生态最重要组成部分，有效转发的层级越多，回报也呈指数级增长，同时这正向回馈给内容生产者，产生高质量内容生产的闭环。
-                                    </p>
-                                    <p>
-                                        这一切的奖励回馈机制完全由生产者来根据市场的变化而自定义，无须中心协调，以达到整个生态失控下的自组织行为。
-                                    </p>
-                                </div>
-                            </div>
-                            <hr>
-                                <div class="row gap-y align-items-center">
-                                    <div class="col-12 col-md-8 zhong">
-                                        <h4>
-                                            内容产业的革命
-                                        </h4>
-                                        <p>
-                                            在去中心化的体系中，中心被系统和程序取代，效率大幅度提升，成本也成千百倍的下降。
-                                        </p>
-                                        <p>
-                                            进而，内容生产的三个主要行为，制作、发现、和分发全部由用户在自动的市场调节下完成，而公平公正公开的利益分配机制也可以让整个生态里的每一个环节都得到正向回馈，从而变的更好。
-                                        </p>
-                                        <p>
-                                            最后，让内容生产者一心生产更受大众喜欢的内容，不用花费大量精力去和“中心”协调。
-                                        </p>
-                                    </div>
-                                    <div class="col-12 col-md-4" style="text-align: center;">
-                                        <img alt="..." class="rounded shadow-2 aos-init" data-aos="zoom-in" src="./static/005.png">
-                                        </img>
-                                    </div>
-                                </div>
-                            </hr>
-                        </hr>
-                    </hr>
-                </hr>
-            </div>
-        </section>
-        <section class="section bg-white">
-            <div class="container">
-                <div class="row gap-y align-items-center">
-                    <div class="col-12 col-md-9 zhong">
-                        <h4>
-                            蜂群思维是能同时进行感知和记忆的分布式内存，是由许多独立的单元高度连接而成的一个活系统，具有典型的自适应性特征。
-                        </h4>
-                        <p>
-                            没有强制的中心控制
-                        </p>
-                        <p>
-                            次级单位具有自治的特质
-                        </p>
-                        <p>
-                            次级单位之间彼此高度连接
-                        </p>
-                        <p>
-                            点对点间的影响通过网络形成非线性因果关系
-                        </p>
-                        <p class="text-right">
-                            ——《失控》作者 KK
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-3" style="text-align: center;">
-                        <img alt="..." class="rounded-circle shadow-2 aos-init" data-aos="zoom-in" src="./static/006.png">
-                        </img>
-                    </div>
-                </div>
-                <hr>
-                    <div class="row gap-y align-items-center">
-                        <div class="col-12 col-md-3" style="text-align: center;">
-                            <img class="rounded-circle chart aos-init" data-aos="zoom-in" src="./static/016.png">
-                            </img>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <h4>
-                                去中心化的组织生命力远大于中央控制的组织，这是人类社会的终极形态
-                            </h4>
-                            <br>
-                                <br>
-                                    <p class="text-right">
-                                        ——秀（show）创始人 胡震生
-                                    </p>
-                                </br>
-                            </br>
-                        </div>
-                    </div>
-                </hr>
-            </div>
-        </section>
-        <!--
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Features
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !-->
-        <section class="section bg-gray">
-          <div class="container">
-              <header class="section-header mb-0">
-                  <small>
-                      <strong>
-                          欢迎
-                      </strong>
-                  </small>
-                  <h2>
-                      去中心化的新世界
-                  </h2>
-                  <br>
-                  </br>
-              </header>
-              <div class="row gap-y">
-                  <div class="col-12 offset-md-2 col-md-8 mb-30">
-                      <img alt="..." class="aos-init" data-aos="fade-up" src="./static/008.jpg">
-                      </img>
-                  </div>
-                  <div class="row no-gap">
-                      <div class="col-12 col-md-6 p-60">
-                          <p class="iconbox iconbox-xxl">
-                              <img src="./static/009.png">
-                              </img>
-                          </p>
-                          <br>
-                              <br>
-                                  <h5>
-                                      生态圈与孵化器
-                                  </h5>
-                                  <br>
-                                      <p>
-                                          秀币完成了区块链到具体内容生产者的最后一个环节，我们更像是一个“网红”孵化器。
-                                      </p>
-                                      <p>
-                                          在已经完成的基础架构之上，我们会自行开发和孵化以此模式下的多个“网红”、“主播”和专心为她们提供流量和运营服务的“经纪公司“与其他的各种代币和协议不同，这可能是全球基于区块链的第一个面向具体内容生产者的应用，我们募集到的资金，大部分会投入到对内容生产者的孵化中，以产生榜样效应，以吸引更多的传统的内容生产者迁移到新的平台上来，让她们带来更多的秀币活跃账户，以完善整个生态。
-                                      </p>
-                                  </br>
-                              </br>
-                          </br>
-                      </div>
-                      <div class="col-12 col-md-6 p-60">
-                          <p class="iconbox iconbox-xxl">
-                              <img src="./static/010.png">
-                              </img>
-                          </p>
-                          <br>
-                              <br>
-                                  <h5>
-                                      设计实现
-                                  </h5>
-                                  <br>
-                                      <p>
-                                          在设计上，我们把系统分成两个层面，底层的基础设施和上面的应用程序。透明公开不可篡改的账簿、智能合约的基础架构等建立在底层，而上层具体的应用程序则来完成业务逻辑和不需要去中心化的流程。
-                                      </p>
-                                      <p>
-                                          秀币是基于以太坊基础设施的公链，因此开发逻辑将和以太坊保持一致。同时我们密切关注EOS的开发进度，在EOS开始公测并稳定后，可能会优先切换到EOS之上。
-                                      </p>
-                                  </br>
-                              </br>
-                          </br>
-                      </div>
-                  </div>
-                  <div class="row no-gap">
-                      <div class="col-12 col-md-6 p-60">
-                          <p class="iconbox iconbox-xxl">
-                              <img src="./static/011.png">
-                              </img>
-                          </p>
-                          <br>
-                              <br>
-                                  <h5>
-                                      实名制
-                                  </h5>
-                                  <br>
-                                      <p>
-                                          因为内容生产必须符合全球各个国家的法律法规，同时每个人的收益都随着智能合约来保证，所以，只有通过面部识别产生的唯一ID和以此叠加的实名验证机制的用户才能在系统内生产、评论和转发。
-                                      </p>
-                                      <p>
-                                          实名体系对于系统的均衡（基于I 个手机一票的机制）和安全与文化而言，是不可或缺的。
-                                      </p>
-                                  </br>
-                              </br>
-                          </br>
-                      </div>
-                      <div class="col-12 col-md-6 p-60">
-                          <p class="iconbox iconbox-xxl">
-                              <img src="./static/012.png">
-                              </img>
-                          </p>
-                          <br>
-                              <br>
-                                  <h5>
-                                      内容过滤
-                                  </h5>
-                                  <br>
-                                      <p>
-                                          去中心化不意味着完全无限制的内容生产，例如儿童色情。在不同国家和文化的体制下，内容的审核标准也不完全一致，所以我们将提供基于代币拥有数量的道德委员会机制，让代币的拥有者根据当地的法律法规来选举道德委员会成员，以过滤不适合大众和整个生态的有害的内容。
-                                      </p>
-                                      <p>
-                                          系统会根据最新的人工智能技术，提供相应的内容审查和过滤机制，同时接口向整个生态开放，通过代币奖励的形式让更多的技术服务商参与进来。
-                                      </p>
-                                  </br>
-                              </br>
-                          </br>
-                      </div>
-                  </div>
-                  <div class="row no-gap">
-                      <div class="col-12 col-md-6 p-60">
-                          <p class="iconbox iconbox-xxl">
-                              <img src="./static/013.png">
-                              </img>
-                          </p>
-                          <br>
-                              <br>
-                                  <h5>
-                                      不可篡改
-                                  </h5>
-                                  <br>
-                                      <p>
-                                          在整个生态体系下，不仅仅饱含直播，还会饱含短视频、图片等一切有助于成产者和消费者互动的媒体介质形式，这些内容是不可篡改的，进入区块链的时间戳，是确认内容版权的关键。
-                                      </p>
-                                      <p>
-                                          同时建立基于人工智能的内容识别和举报系统，能快速的发现和识别出相似内容，以确定版权归属。
-                                      </p>
-                                      <p>
-                                          整个生态中，所有的信用和评级都是基于区块链的代币体系下的公开的账本来实现的，里面所有的交易记录都不可篡改。
-                                      </p>
-                                  </br>
-                              </br>
-                          </br>
-                      </div>
-                      <div class="col-12 col-md-6 p-60">
-                          <p class="iconbox iconbox-xxl">
-                              <img src="./static/014.png">
-                              </img>
-                          </p>
-                          <br>
-                              <br>
-                                  <h5>
-                                      反垃圾机制
-                                  </h5>
-                                  <br>
-                                      <p>
-                                          基于所有内容必须交易的原则，可以大幅度降低垃圾内容的数量。
-                                      </p>
-                                      <p>
-                                          例如，直播间人数支付的代币不足以达到覆盖其流量的成本时，生产者将不能开直播，或者直播将会被中止。
-                                      </p>
-                                      <p>
-                                          没有被付费的视频内容，也不会支持存储在系统内。
-                                      </p>
-                                  </br>
-                              </br>
-                          </br>
-                      </div>
-                  </div>
-                  <div class="row no-gap">
-                      <div class="col-12 col-md-6 p-60">
-                          <p class="iconbox iconbox-xxl">
-                              <img src="./static/015.png">
-                              </img>
-                          </p>
-                          <br>
-                              <br>
-                                  <h5>
-                                      货币回收机制
-                                  </h5>
-                                  <br>
-                                      <p>
-                                          系统将在整个系统的交易中，将抽取千分之一作为“摩擦”费，以增加交易成本使其真实可靠，防止垃圾交易，保证系统的有效性。
-                                      </p>
-                                      <p>
-                                          同时这部分“摩擦”抽取的代币将会直接销毁，以从根本上确保交易产生的价值不会被系统或者中心所利用或者变相返还给交易发起人。
-                                      </p>
-                                  </br>
-                              </br>
-                          </br>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </section>
-        <!--
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Features
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !-->
-        <section class="section bg-deep-gray">
-            <div class="container">
-                <header class="section-header mb-0">
-                    <h2>
-                        核心团队
-                    </h2>
-                    <br>
-                    </br>
-                </header>
-                <div class="row gap-y">
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff; height:315px;padding: 35px 0 0 0;border-radius: 18px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/ja-001.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                水野 治久
-                            </h5>
-                            <small>
-                                CEO
-                            </small>
-                            <h6>
-                                シューコインの創始者
-                            </h6>
-                            <h6 style="color:#616771">
-                                ブロックチェーンの専門家
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff; height:315px;padding: 35px 0 0 0;border-radius: 18px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/007.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                胡震生
-                            </h5>
-                            <small>
-                                创始人
-                            </small>
-                            <h6 style="color:#616771">
-                                微拍创始人 前花椒CEO
-                            </h6>
-                            <h6 style="color:#616771">
-                                连续创业者 比特币专家
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0; height:315px; border-radius: 18px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/026.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                黄雅冠
-                            </h5>
-                            <small>
-                                首席架构师
-                            </small>
-                            <h6 style="color:#616771">
-                                微拍联合创始人 连续创业者
-                            </h6>
-                            <h6 style="color:#616771">
-                                清华大学计算机软件博士
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;; height:315px; border-radius: 18px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/023.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                陈晨
-                            </h5>
-                            <small>
-                                首席运营官 联合创始人 连续创业者
-                            </small>
-                            <h6 style="color:#616771">
-                                花椒市场总监
-                            </h6>
-                            <h6 style="color:#616771">
-                                映客市场总监
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;; height:315px; border-radius: 18px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/022.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                Modo
-                            </h5>
-                            <small>
-                                首席设计总监 联合创始人
-                            </small>
-                            <h6 style="color:#616771">
-                                微拍设计总监
-                            </h6>
-                            <h6 style="color:#616771">
-                                花椒设计总监
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <header class="section-header mb-0" style="padding-top: 90px">
-                    <h2>
-                        顾问团队
-                    </h2>
-                    <br>
-                    </br>
-                </header>
-                <div class="row gap-y">
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/035.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                李笑来
-                            </h5>
-                            <!--<small>首席架构师</small>-->
-                            <!--<h6 style="color:#616771">“秀”区块链首席技术顾问</h6>-->
-                            <!--<h6 style="color:#616771">信链Trust Data创始人</h6>-->
-                            <h6 style="color:#616771">
-                                硬币资本
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/027.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                林嘉鹏
-                            </h5>
-                            <!--<small>创始人</small>-->
-                            <!--<h6 style="color:#616771">“秀”首席区块链顾问</h6>-->
-                            <h6 style="color:#616771">
-                                Linkvc数字货币基金创始人
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/028.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                赵东
-                            </h5>
-                            <h6 style="color:#616771">
-                                墨迹天气联合创始人
-                            </h6>
-                            <h6 style="color:#616771">
-                                知名比特币场外交易商
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/025.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                贾斌
-                            </h5>
-                            <!--<small>首席架构师</small>-->
-                            <!--<h6 style="color:#616771">“秀”区块链首席技术顾问</h6>-->
-                            <!--<h6 style="color:#616771">信链Trust Data创始人</h6>-->
-                            <h6 style="color:#616771">
-                                盛大研究院副院长
-                            </h6>
-                            <h6 style="color:#616771">
-                                百度科学家
-                            </h6>
-                            <h6 style="color:#616771">
-                                应用汇CTO
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/038.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                同道大叔
-                            </h5>
-                            <h6 style="color:#616771">
-                                同道大叔文化传播有限公司创始人
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/024.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                Kevin CHIU
-                            </h5>
-                            <!--<small>首席运营官 联合创始人 连续创业者</small>-->
-                            <!--<h6 style="color:#616771">“秀”区块链首席金融顾问</h6>-->
-                            <h6 style="color:#616771">
-                                星链资本合伙人
-                            </h6>
-                            <!--<h6 style="color:#616771">网利宝金融创始人</h6>-->
-                            <h6 style="color:#616771">
-                                福布斯30under30
-                            </h6>
-                            <h6 style="color:#616771">
-                                美国伯克利华人学生会主席
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <header class="section-header mb-0" style="padding-top: 90px">
-                    <h2>
-                        基石投资人
-                    </h2>
-                    <br>
-                    </br>
-                </header>
-                <div class="row gap-y">
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/035.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                李笑来
-                            </h5>
-                            <!--<small>创始人</small>-->
-                            <!--<h6 style="color:#616771">“秀”首席区块链顾问</h6>-->
-                            <h6 style="color:#616771">
-                                硬币资本
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/027.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                林嘉鹏
-                            </h5>
-                            <!--<small>创始人</small>-->
-                            <!--<h6 style="color:#616771">“秀”首席区块链顾问</h6>-->
-                            <h6 style="color:#616771">
-                                Linkvc数字货币基金创始人
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/024.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                Kevin CHIU
-                            </h5>
-                            <h6 style="color:#616771">
-                                星链资本合伙人
-                            </h6>
-                            <h6 style="color:#616771">
-                                福布斯30under30
-                            </h6>
-                            <h6 style="color:#616771">
-                                美国伯克利华人学生会主席
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/028.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                赵东
-                            </h5>
-                            <h6 style="color:#616771">
-                                墨迹天气联合创始人
-                            </h6>
-                            <h6 style="color:#616771">
-                                知名比特币场外交易商
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/029.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                杜均
-                            </h5>
-                            <h6 style="color:#616771">
-                                火币网联合创始人
-                            </h6>
-                            <h6 style="color:#616771">
-                                节点资本创始合伙人
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/030.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                高胜利
-                            </h5>
-                            <h6 style="color:#616771">
-                                锐角云创始人
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/031.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                乔帅
-                            </h5>
-                            <h6 style="color:#616771">
-                                跨学网创始人
-                            </h6>
-                            <h6 style="color:#616771">
-                                清科辰光基金（10亿规模）
-                                <br>
-                                    管理合伙人
-                                </br>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/032.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                黄胜
-                            </h5>
-                            <h6 style="color:#616771">
-                                流量矿石创始人
-                            </h6>
-                            <h6 style="color:#616771">
-                                前快播科技产品总监
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/038.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                同道大叔
-                            </h5>
-                            <h6 style="color:#616771">
-                                同道大叔文化传播有限公司创始人
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div style="background: #fff;padding: 35px 0 0 0;border-radius: 18px; height:315px; box-shadow: 0px 0px 10px #ccc;">
-                            <a href="http://www.show.one/#">
-                                <img alt="..." class="team-avatar" src="./static/039.png">
-                                </img>
-                            </a>
-                            <h5 class="top">
-                                李泉
-                            </h5>
-                            <h6 style="color:#616771">
-                                互联网创业老兵
-                            </h6>
-                            <h6 style="color:#616771">
-                                资深比特币玩家和投资人
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section bg-gray">
-            <div class="container">
-                <header class="section-header mb-0">
-                    <h2>
-                        基石投资机构
-                    </h2>
-                    <br>
-                    </br>
-                </header>
-                <div class="row gap-y row-m-b">
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div class="mechanism-block">
-                            <img alt="硬币资本" src="./static/037.png">
-                                <h6>
-                                    硬币资本
-                                </h6>
-                                <p>
-                                    <a href="http://inblockchain.com/" target="_blank">
-                                        http://inblockchain.com
-                                    </a>
-                                </p>
-                                <p>
-                                </p>
-                                <p>
-                                </p>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div class="mechanism-block">
-                            <img alt="Dfund" src="./static/040.png">
-                                <h6>
-                                    Dfund
-                                </h6>
-                                <p>
-                                    由币圈知名投资人成立
-                                </p>
-                                <p>
-                                    专注于优质区块链
-                                </p>
-                                <p>
-                                    发布专案的数字货币基金
-                                </p>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div class="mechanism-block">
-                            <img alt="连接资本" src="./static/021.png">
-                                <h6>
-                                    连接资本
-                                </h6>
-                                <p>
-                                    <a href="http://www.linkvc.com/" target="_blank">
-                                        http://www.linkvc.com
-                                    </a>
-                                </p>
-                                <p>
-                                </p>
-                                <p>
-                                </p>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div class="mechanism-block">
-                            <img alt="星链资本" src="./static/020.png">
-                                <h6>
-                                    星链资本
-                                </h6>
-                                <p>
-                                    <a href="http://www.starchaincapital.com/" target="_blank">
-                                        http://www.starchaincapital.com
-                                    </a>
-                                </p>
-                                <p>
-                                </p>
-                                <p>
-                                </p>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-3 team-2 ju">
-                        <div class="mechanism-block">
-                            <img alt="节点资本" src="./static/033.png">
-                                <h6>
-                                    节点资本
-                                </h6>
-                                <p>
-                                    <a href="http://www.nodecap.com/" target="_blank">
-                                        http://www.nodecap.com
-                                    </a>
-                                </p>
-                                <p>
-                                </p>
-                                <p>
-                                </p>
-                            </img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="media-top">
-            <div class="container" style="text-align: center">
-                <a class="media-icon1 a aa" href="javascript:void(0)">
-                    <img src="./static/tokenmarket_logo.png"/>
-                </a>
-                <a class="media-icon2 aa" href="javascript:void(0)">
-                    <img src="./static/marketwatch_logo.png"/>
-                </a>
-                <a class="media-icon3 a aa" href="javascript:void(0)">
-                    <img src="./static/thebc_logo.png"/>
-                </a>
-                <a class="media-icon4 aa" href="javascript:void(0)">
-                    <img src="./static/jinniu_logo.png"/>
-                </a>
-                <a class="media-icon10 a aa" href="javascript:void(0)" style="margin-left: -10px;">
-                    <img src="./static/pw.png"/>
-                </a>
-                <a class="media-icon5 aa" href="javascript:void(0)">
-                    <img src="./static/jinse_logo.png"/>
-                </a>
-            </div>
-        </section>
-        <section class="media-bottom">
-            <div class="container" style="text-align: center">
-                <a class="media-icon6 a aaa" href="javascript:void(0)">
-                    <img src="./static/36kr.png"/>
-                </a>
-                <div style="display: none;">
-                    <img src="./static/aa.png">
-                    </img>
-                </div>
-                <a class="media-icon7 aaa" href="javascript:void(0)">
-                    <img src="./static/sohu.png"/>
-                </a>
-                <a class="media-icon8 a aaa" href="javascript:void(0)">
-                    <img src="./static/netease.png"/>
-                </a>
-                <a class="media-icon9 aaa" href="javascript:void(0)">
-                    <img src="./static/technode.png"/>
-                </a>
-                <a class="media-icon11 a aaa" href="javascript:void(0)" style="margin-left: -18px;">
-                    <img src="./static/cbn.png"/>
-                </a>
-            </div>
-        </section>
-        <section class="bg-dark-footer team-2">
-            <p class="footer-first">
-                1showfoundation@gmail.com
-            </p>
-            <div class="footer-icon-box" style="padding-left: 15px;">
-                <a class="foot-icon1" href="https://www.instagram.com/showcoin/" target="_blank">
-                </a>
-                <a class="foot-icon2" href="https://twitter.com/Show_coin" target="_blank">
-                </a>
-                <a class="foot-icon3" href="https://jq.qq.com/?_wv=1027&k=5ievoE5" target="_blank">
-                </a>
-                <a class="foot-icon4 md-trigger md-setperspective" data-modal="modal-17" href="javascript:void(0)">
-                </a>
-                <a class="foot-icon5" href="https://www.facebook.com/showcoin" target="_blank">
-                </a>
-                <a class="foot-icon6" href="https://www.youtube.com/channel/UC_9be-8Ryx0FkDWI0lEPvbA" target="_blank">
-                </a>
-                <a class="foot-icon7" href="https://www.bitcoinforum.com/" target="_blank">
-                </a>
-                <a class="foot-icon8" href="https://www.reddit.com/user/showcoin/" target="_blank">
-                </a>
-                <a class="foot-icon9" href="https://beechat.io/join?g=7a68466d771742089f9e7514c9217292&lang=zh" target="_blank">
-                </a>
-            </div>
-            <a class="foot-show" href="javascript:void(0)">
+<body class="js-scroll">
+    <script src="./static/headerEnglish.js.下载">
+    </script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class=" n-logo pull-left" href="/index.html">
+                <img src="./static/logo_white.png">
+                    DeepBrain Chain
+                </img>
             </a>
-            <p class="foot-copyright">
-                2017 Show Foundation Ltd.
+            <div class="pull-right">
+                <ul class="n-menu">
+                    <li>
+                        <a href="/index.html">
+                            主页
+                        </a>
+                    </li>
+                    <li class="n-current">
+                        <a class="js-menu" href="/index.html#yj">
+                            愿景
+                        </a>
+                    </li>
+                    <li>
+                        <a class="js-menu" href="/index.html#jj">
+                            介绍
+                        </a>
+                    </li>
+                    <li>
+                        <a class="js-menu" href="/index.html#ys">
+                            优势
+                        </a>
+                    </li>
+                    <li>
+                        <a class="js-menu" href="/index.html#td">
+                            投资机构
+                        </a>
+                    </li>
+                    <li>
+                        <a class="js-menu" href="/index.html#lc">
+                            历史 & 计划
+                        </a>
+                    </li>
+                    <li>
+                        <a class="js-menu" href="/index.html#al">
+                            合作伙伴
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="n-banner n-por">
+            <div class="n-banner-font text-center">
+                <!-- <div style="border: 3px solid red;display: inline-block;margin-bottom: 30px;border-radius: 5px">
+                    <span style="width: 8px;display: inline-block">
+                    </span>
+                    DBC will start trading on Huobi.pro  this week
+                    <span style="width: 8px;display: inline-block">
+                    </span>
+                </div> -->
+                <!-- <div class="n-ico-participation">
+                    <div class="rowImgs">
+                        <div class="col-md-1Img">
+                            <a href="http://www.huobi.pro/" target="_blank">
+                                <img src="./static/Huobi.png"/>
+                            </a>
+                        </div>
+                        <div class="col-md-1Img">
+                            <a href="http://www.kucoin.com/" target="_blank">
+                                <img src="./static/KuCoin.png"/>
+                            </a>
+                        </div>
+                        <div class="col-md-1Img">
+                            <a href="http://www.lbank.info/" target="_blank">
+                                <img src="./static/LBank.png"/>
+                            </a>
+                        </div>
+                        <div class="col-md-1Img">
+                            <a href="https://gate.io/" target="_blank">
+                                <img src="./static/ic_gate.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <h1 class="n-block n-mb5">
+                    所有硬件领域开源、信息流动、价值流动平台
+                </h1>
+                <div class="downloadPDF">
+                    <!-- download="DeepBrainChainFile.pdf"-->
+                    <!--onclick="clickDownloadPDF(this)"-->
+                    <a class="btn btn-default n-disabled" href="/DeepBrainChainWhitepaper.pdf" id="downloadFile" target="_blank">
+                        白皮书 下载
+                    </a>
+                </div>
+                <!--隐藏视频部分-->
+                <!-- onclick="showHidePlayPauseVideoBtn(event)"-->
+                <div class="n-sp">
+                    <div class="video_ls">
+                        <video id="vids" src="./beautful.mp3">
+                            您的浏览器不支持h5标签,请升级或换个浏览器
+                        </video>
+                        <!--标题-->
+                        <div class="title_top">
+                            <!--视频标题-->
+                        </div>
+                        <!--暂停-->
+                        <div id="pass" style="display: none;">
+                            <img src="./static/zt.png">
+                            </img>
+                        </div>
+                    </div>
+                    <!--控制器-->
+                    <div class="controls">
+                        <!--展厅播放快进快退音量全屏-->
+                        <div class="trol_list">
+                            <!--暂停和快进快退-->
+                            <div class="list_1">
+                                <!--<i class="iconfont icon-zanting2" id="ztbf"><img src="images/pauseBtn.png"></i>-->
+                                <div class="ztbf">
+                                    <img id="ztbf" src="./static/pauseBtn.png"/>
+                                </div>
+                            </div>
+                            <!--音量-->
+                            <div class="voice" style="display: none;">
+                                <i class="iconfont icon-yinliang" style="float:left;">
+                                </i>
+                                <div class="voicep">
+                                    <div id="vBar">
+                                        <div id="vBar_in">
+                                        </div>
+                                    </div>
+                                    <div id="vBtn">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--时间-->
+                            <div class="vtime">
+                                <font id="nTime">
+                                    00:00:05
+                                </font>
+                                /
+                                <em id="aTime">
+                                    00:02:18
+                                </em>
+                            </div>
+                            <!--全屏-->
+                            <i class="iconfont icon-quanping" id="qp" style="display: none">
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="n-mb-big js-offset" id="yj">
+        </div>
+        <!--愿景-->
+        <div class="n-part-one">
+            <h1 class="n-block text-center n-mb5">
+                愿景
+            </h1>
+            <div class="n-yj n-mb4">
+                所有硬件领域开源、信息流动、价值流动平台
+            </div>
+            <!--<div class="n-yj">愿景二：为物联网设备提供去中心化、可永久维护、安全的基础设施，让人工智能无处不在。</div>-->
+        </div>
+        <!--项目简介-->
+        <div class="n-mb-big js-offset" id="jj">
+        </div>
+        <div class="n-part-two">
+            <h1 class="n-block text-center n-mb5">
+                项目介绍
+            </h1>
+            <p class="n-text-indent text-left n-mb41">
+                开源链（OSC）是第一个把电子行业的广义IP以智能合约的方法进行量化的平台。
             </p>
-            <p class="foot-copyright">
-                UEN 201728042H
+            <p class="n-text-indent text-left n-mb41">
+                开源链平台对区块基础设施中性 （包括以太坊 ，星云链等），来构建电子行业的IP应用层。
+                <br>
+                </br>
             </p>
-            <p class="foot-copyright">
-                22 NORTH CANAL ROAD #02-00 SINGAPORE 048834
+            <p class="n-text-indent text-left ">
+                开源链平台用区块链技术驱动传统电子行业的技术开发流程、供应链、IP交易、媒体及网络社区的变革。把电子行业IP定量化，让数字资产能够自我演化，自我增值，增强参与者信任，从而把价值回馈给所有开源链的参与者。
             </p>
-        </section>
-    </main>
-    <div class="md-modal md-effect-17" id="modal-17">
-        <div class="md-content">
-            <div>
-                <img src="./static/Wechat.png">
-                </img>
+            <p class="n-text-indent text-left n-mb4">
+                开源链平台对区块基础设施中性 （包括以太坊 ，星云链等），来构建电子行业的IP应用层。
+            </p>
+            <p class="n-text-indent text-left n-mb4">
+                开源链平台用区块链技术驱动传统电子行业的技术开发流程、供应链、IP交易、媒体及网络社区的变革。把电子行业IP定量化，让数字资产能够自我演化，自我增值，增强参与者信任，从而把价值回馈给所有开源链的参与者。
+            </p>
+            <div class="n-media n-padding40 n-mb4">
+                <dl class="n-table">
+                    <dt>
+                        <img src="./static/i7.png"/>
+                    </dt>
+                    <dd>
+                        <h2>
+                            Low Cost
+                        </h2>
+                        <p>
+                            Miners' main income comes from supplying computing resouce to the DeepBrain Chain network. They will receive DBC as compensation when the nodes' computational power is used by the network. This system provides enterprises with lower cost computational power.
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="n-media n-padding40 n-mb4">
+                <dl class="n-table">
+                    <dt>
+                        <img src="./static/i8.png"/>
+                    </dt>
+                    <dd>
+                        <h2>
+                            Privacy Protect
+                        </h2>
+                        <p>
+                            Using smart contracts allows us to separate data ownership and usage rights ensuring security of the data transfer via crypto-algorithms and separation of mechanisms.
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="n-media n-padding40 n-mb4">
+                <dl class="n-table">
+                    <dt>
+                        <img src="./static/i9.png"/>
+                    </dt>
+                    <dd>
+                        <h2>
+                            Flexible Computing
+                        </h2>
+                        <p>
+                            When computational demand peaks, DeepBrain Chain can adjust itself automatically by utilizing idle nodes.
+                        </p>
+                        <p>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="n-media n-padding40">
+                <dl class="n-table">
+                    <dt>
+                        <img src="./static/i10.png"/>
+                    </dt>
+                    <dd>
+                        <h2>
+                            Security
+                        </h2>
+                        <p>
+                            Even some nodes of DeepBrain Chain are attacked by hacker, the remaining nodes are working well as usual and data leakage is forbidded. DeepBrain Chain makes sure that AI factories operation will never be interrupted also.
+                        </p>
+                        <p>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--突出优势-->
+        <div class="n-mb-big js-offset" id="ys">
+        </div>
+        <div class="n-part-three">
+            <h1 class="n-block text-center n-mb5">
+                独特的优势
+            </h1>
+            <div class="n-media n-padding40 n-mb4">
+                <dl class="n-table">
+                    <dt>
+                        <img src="./static/i4.png"/>
+                    </dt>
+                    <dd>
+                        <h2>
+                            顶级工程师
+                        </h2>
+                        <p>
+                            We were awarded first place in the enterprise sector of SMP2017, the Chinese man-machine dialogue evaluation. There were more than thirty national top AI teams participating in this competition.
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="n-media n-padding40 n-mb4">
+                <dl class="n-table">
+                    <dt>
+                        <img src="./static/i5.png"/>
+                    </dt>
+                    <dd>
+                        <h2>
+                            模式创新
+                        </h2>
+                        <p>
+                            DeepBrain Chain is the world's first AI computing platform built using blockchain technology.
+                            <br>
+                                This is a new innovation in the intersection of AI and cryptocurrencies.
+                            </br>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <div class="n-media n-padding40">
+                <dl class="n-table">
+                    <dt>
+                        <img src="./static/i6.png"/>
+                    </dt>
+                    <dd>
+                        <h2>
+                            IP确权
+                        </h2>
+                        <p>
+                            We created DeepBrain Cloud Platform which acts just like Amazon's Alexa. There are lots of applicants in the AI skills store and more than 100 clients using DeepBrain Cloud Platform.
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--核心团队-->
+        <div class="n-mb-big js-offset" id="td">
+        </div>
+        <!--投资机构-->
+        <div class="n-mb-big" id="czjg">
+        </div>
+        <div class="n-part-six">
+            <h1 class="n-block text-center n-mb5">
+                Investment Institution
+            </h1>
+            <ul class="n-coreteam n-table n-w700">
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-10">
+                        <img alt="金沙江创业投资" src="./static/jsj.png" width="246">
+                            <h3 class="n-block">
+                                GSR Ventures
+                            </h3>
+                            <span class="n-block">
+                                Investment Institutions
+                            </span>
+                        </img>
+                    </div>
+                </li>
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-11">
+                        <img alt="戈壁创投" src="./static/gbtx.png" width="246">
+                            <h3 class="n-block">
+                                GOBI Partners
+                            </h3>
+                            <span class="n-block">
+                                Investment Institutions
+                            </span>
+                        </img>
+                    </div>
+                </li>
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-31">
+                        <img alt="Collinstar Capital" src="./static/CollinstarLogo.png" width="246">
+                            <h3 class="n-block">
+                                Collinstar Capital
+                            </h3>
+                            <span class="n-block">
+                                Investment Institutions
+                            </span>
+                        </img>
+                    </div>
+                </li>
+            </ul>
+            <ul class="n-coreteam n-table n-w700">
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-32">
+                        <img alt="Blockchain Ventures" src="./static/BlockchainVentures.png" width="246">
+                            <h3 class="n-block">
+                                Blockchain Ventures
+                            </h3>
+                            <span class="n-block">
+                                Investment Institutions
+                            </span>
+                        </img>
+                    </div>
+                </li>
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-12">
+                        <img alt="NEO Council" src="./static/GBIC.png" width="246">
+                            <h3 class="n-block">
+                                Strategic Partner
+                            </h3>
+                            <span class="n-block">
+                                Investment Institutions
+                            </span>
+                        </img>
+                    </div>
+                </li>
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-33">
+                        <img alt="cbl" src="./static/cbl.png" style="display: none;" width="246">
+                            <h3 class="n-block">
+                            </h3>
+                            <span class="n-block">
+                            </span>
+                        </img>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--合作伙伴-->
+        <div class="n-mb-big" id="hzhb">
+        </div>
+        <div class="n-part-seven">
+            <h1 class="n-block text-center n-mb5">
+                Partnership in blockchain technology
+            </h1>
+            <ul class="n-coreteam n-table n-w700">
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-34">
+                        <img alt="NEO" src="./static/NEO.png" width="246">
+                            <h3 class="n-block">
+                                NEO Council
+                            </h3>
+                            <span class="n-block">
+                                Partnership
+                            </span>
+                        </img>
+                    </div>
+                </li>
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-35">
+                        <img alt="CBL" src="./static/cbl.png" width="246">
+                            <h3 class="n-block">
+                                Reviewed by Columbia Blockchain Lab
+                            </h3>
+                            <span class="n-block">
+                                Partnership
+                            </span>
+                        </img>
+                    </div>
+                </li>
+                <li>
+                    <div class="n-people text-center md-trigger" data-modal="modal-36">
+                        <img alt="Collinstar Capital" src="./static/CollinstarLogo.png" style="display: none;" width="246">
+                            <h3 class="n-block">
+                            </h3>
+                            <span class="n-block">
+                            </span>
+                        </img>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--投资人与顾问-->
+        <!--<div id="tzgw" class="n-mb-big"></div>-->
+        <!--何永-->
+        <div class="md-modal md-effect-1" id="modal-1">
+            <div class="n-profile">
+                <h3>
+                    He Yong is the CEO of DeepBrain Chain. He was once enrolled in a Ph.D. program at East China Normal University and Chinese Academy of Sciences
+                </h3>
+                <p class="n-text-indent">
+                    As an artificial intelligence expert, he holds the title of Innovation Character of the Shanghai computer industry. He started research on bitcoin and blockchain technology in 2014.
+                </p>
+                <p class="n-text-indent">
+                    Proficient in product design and machine learning algorithms, he is the inventor of the intelligent semantic error correction engine used for much of game translation.
+                </p>
+                <p class="n-text-indent">
+                    He Yong is among the first batch of entrepreneurs in the field of artificial intelligence in China. He has presided over the research and development of the first Chinese voice assistant, Smart 360, whose registered users exceeded 17 million,
+                He also led the development of the world's first artificial intelligence speakers half a year earlier than Amazon Echo. He also oversaw the development of the country's first "cloud of the brain" system, DeepBrain.
+                He led the DeepBrain Chain team to win an innovation and creativity award in ZhongGuancun's Second Blockchain Competition in 2017.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--舒畅-->
+        <div class="md-modal md-effect-1" id="modal-2">
+            <div class="n-profile">
+                <h3>
+                    He holds a Ph.D. in  artificial intelligence from University of Nottingham and a Master‘s in Artificial Intelligence from the University of Bristol. He also holds a double bachelor’s from Beihang University and Astronautics and University of Hull
+                </h3>
+                <p class="n-text-indent">
+                    He served as a visiting researcher at the National Institute of informatics in Japan. During that period, he studied under Nigel Collier, Professor of the University of Cambridge in Computational Linguistics and Big Data Analysis and  published several academic papers.
+                </p>
+                <p class="n-text-indent">
+                    He is also an artificial intelligence, blockchain, and cryptography expert. He is the director of the artificial intelligence laboratory of Shanghai, a branch of the Chinese Academy of Sciences Institute and the Semantic Intelligence. He is a member of the Youth Work Committee of Chinese Information Society of China. He led the AI team to win the first prize in the business community of the SMP2017 Chinese man-machine dialogue evaluation at Harbin Institute of Technology. In that event, more than 30 domestic top artificial intelligence teams participated. He published many papers in COLING, IJAI and other top international conferences and magazine journals. In the country, he also holds a number of artificial intelligence related patents.
+                </p>
+                <p class="n-text-indent">
+                    He is under the tutelage of master level professor of the international machine learning field, Nello Cristianini. Professor Nello Cristianini is a professor of machine learning at the University of Bristol, UK. There he is head of artificial intelligence laboratories, He is one of the authors of the "Support Vector Machine" and "Pattern Analysis Kernel Functions". He is one of the top 100 most influential academic researchers of machine learning in the world as of 2016.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--李传丰-->
+        <div class="md-modal md-effect-1" id="modal-3">
+            <div class="n-profile">
+                <h3>
+                    Master‘s in Architectural from the Research Institute of MCC Group
+                </h3>
+                <p class="n-text-indent">
+                    He is the director of the China Audio Association and a founding member of Advanced Audio and Video Industry Association of Pudong New Area. He is also the founding director of Intelligent Workshop.
+                </p>
+                <p class="n-text-indent">
+                    He is among the first batch of entrepreneurs in the field of artificial intelligence in China. He started researching bitcoin and blockchain technology in 2015.
+                </p>
+                <p class="n-text-indent">
+                    He has personally invested in multiple blockchain projects returning 10 times his original investment.
+                </p>
+                <p class="n-text-indent">
+                    On behalf of the company, he won the first prize of Innovation China (Shanghai Division) in 2012.
+                </p>
+                <p class="n-text-indent">
+                    He also led the marketing team to achieve more than 17 million registered users for the first Chinese voice assistant, Smart 360.
+                </p>
+                <p class="n-text-indent">
+                    The he a columnist for a number of technical media sites in China, publishing many articles on the development of artificial intelligence products and blockchain industry analysis. This gives him much industry influence.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--李竹桥-->
+        <div class="md-modal md-effect-1" id="modal-4">
+            <div class="n-profile">
+                <h3>
+                    Bachelor’s in Management, Anhui University
+                </h3>
+                <p class="n-text-indent">
+                    Having 16 years of sales experience at Aigo, annual sales champion of Aigo, sales channel leader of Aigo, general manager of Shanghai, Nanjing and Hangzhou branch, general manager of business group of Peninsula Iron; Familiar with the national channel development, 2B2C sales and business development, and the Internet precision marketing. Former channel director, and general manager of the branch of Aigo, the director of business group of Peninsula Iron and a new product line has achieved annual sales of hundreds of millions. He is familiar with consumer electronics market, with research on the overall trend of consumer electronics. His working experience is rich in TO B, TO C actual combat experience, channel resources and sales management experience, good at product sales strategic layout and market demand reversing product landing, and he understands customer’s pain point, combines customer demand with technology landing.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--武拥珍-->
+        <div class="md-modal md-effect-1" id="modal-5">
+            <div class="n-profile">
+                <h3>
+                    Master‘s in Business Administration
+                </h3>
+                <p class="n-text-indent">
+                    She has 11 years of work experience, good at enterprise operations management, financial management, human resource administration, internal control management and other work
+                </p>
+                <p class="n-text-indent">
+                    She is familiar with the laws and regulations involved in the operation of enterprises. On behalf of the company, she won the superior enterprise award in 2014 Shanghai "innovation and entrepreneurship competition" finals; "2016 youth" national finals silver medal and many other awards. She is enthusiastic about public welfare, the current consultant of Jiangsu Women's Volleyball Club Fans Association, and participated in the poverty alleviation foundation and other social welfare organizations.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--卢言峰-->
+        <div class="md-modal md-effect-1" id="modal-6">
+            <div class="n-profile">
+                <h3>
+                    Bachelor’s in Tongji University
+                </h3>
+                <p class="n-text-indent">
+                    With 15 years of work experience in visual intercom and smart home industry, R & D and management experience in two Top 500 companies (NEC/Honeywell). Focus on hardware product development and R & D team building, familiar with program selection, technical specifications, R & D process, testing standards, product mass production, etc., with 10+ large embedded product development experiences, and now he is responsible for application research of DeepBrain Chain in the field of Internet of things.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--陆晨煜-->
+        <div class="md-modal md-effect-1" id="modal-7">
+            <div class="n-profile">
+                <h3>
+                    Master‘s in Computer Science, University of Arizona, Bachelor’s in Computer Science, Shanghai Jiaotong University
+                </h3>
+                <p class="n-text-indent">
+                    Member of Shanghai Jiaotong University International Collegiate Programming Contest, won the first national physics competition in Shanghai Division
+                </p>
+                <p class="n-text-indent">
+                    The main research direction is the optimization and application of blockchain technology and depth learning algorithm in the field of NLP and automatic dialogue. He has published several academic papers, on behalf of the company won the first prize in the business community of SMP2017 Chinese man-machine dialogue evaluation of the Harbin Institute of Technology AI evaluation.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--尚喆-->
+        <div class="md-modal md-effect-1" id="modal-8">
+            <div class="n-profile">
+                <h3>
+                    Master's in University of Science and Technology of China,Bachelor 's in Chongqing University, major is software engineering
+                </h3>
+                <p class="n-text-indent">
+                    Has worked as a Linux device driver software engineer in Intel Asia Pacific R & D Cente,start to join in blockchain development from 2015,be familiar with the blockchain from bottom level and smart contract.Has been involved in research and development of Bytom chain.Participate in writing the book
+                    <blockchain development="" guide="" technological="">
+                        .
+                    </blockchain>
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--王凌斌-->
+        <div class="md-modal md-effect-1" id="modal-9">
+            <div class="n-profile">
+                <h3>
+                    Bachelor of Software Engineering, Tian Jin University
+                </h3>
+                <p class="n-text-indent">
+                    As a team leader of ACM group in Tian Jin University. Awarded the eighth prize in Korea Division of ACM/ICPC(College Students' Programming Competition)、2007 ACM/ICPC(College Students' Programming Competition) Beijing Division Bronze Medal；Worked as a R&D; engineer at sohu changyou and giant network. Eight years of experience in server development, years of experience in DevOps and  big data analysis. Skilled at server network development, micro-service architecture design. Proficient in blockchain technology and smart contract development of ethereum.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--金沙江创业投资-->
+        <div class="md-modal md-effect-1" id="modal-10">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    GSR Ventures focuses on investing based in China and faces high and new technology start-ups in the global market. GSR Ventures currently manages more than $1 billion in funds and has a long-term strategic partnership with Mayfield Fund (founded in 1969), the "oldest" venture capital fund in Silicon Valley. GSR Ventures has offices in Beijing, China and Silicon Valley, USA. It has invested in Qunar, Lily network, Didi Taxi, Xiaohongshu, Inke, ele.me, OFO, and other well-known start-up enterprises, and it is the first-tier investment fund in China.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--戈壁创投-->
+        <div class="md-modal md-effect-1" id="modal-11">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Gobi Partners has offices in Shanghai, Beijing, and Southeast Asia, and is a professional venture capital company focusing on investing in China's early science and technology projects. Gobi fund's strategic investors include IBM, Sierra Ventures, The McGraw-Hill Companies, and Steamboat Ventures (Disney's venture capital sector), etc. It has invested in Tuniu, Camera360, CloudCare, and other famous start-ups, and is a veteran investment fund.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--GBIC-->
+        <div class="md-modal md-effect-1" id="modal-12">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    GBIC (Global Blockchain Innovation Center) is a global hub for blockchain technology that provides investment, human capital, and resources for the development, acceleration and launch of blockchain projects. We utilize our global network of resources & investors from China, Russia, Europe & Korea to provide investment and services including Marketing & PR, community building, exchange listings, white paper and token analysis.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--丁健-->
+        <div class="md-modal md-effect-1" id="modal-13">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Managing Director of Jinsha River Venture Capital Fund, Former AsiaInfo co-founder & CEO. AsiaInfo has assumed the design and construction of China's Internet infrastructure. In March 2000, he led AsiaInfo become the first high-tech company listed on the NASDAQ in the United States. Currently, he is a director of AsiaInfo Group and an independent director of Baidu. Prior to that, he served as chairman, chief executive officer, chief technology officer and vice president of business development at AsiaInfo. bachelor's in  Peking University in 1986 and Master‘s in  information science at the University of California, USA. He invested in Iboxpay, Skyroam, GEO, Horizon Robot, etc.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--朱啸虎-->
+        <div class="md-modal md-effect-1" id="modal-14">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Managing Director of Jinsha River Venture Capital, making early investments in the Internet, wireless and new media industries. He has founded the eBaoTech Network Technology Co., Ltd., and once worked in McKinsey Greater China. Master‘s in international economic literature from Fudan University and bachelor's in  telecommunications engineering from Shanghai Jiaotong University. He invested Didi Taxi, Xiaohongshu, Inke, ele.me, DZH, ofo, and so on.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--杨志伟-->
+        <div class="md-modal md-effect-1" id="modal-15">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Capital Partner of Jinsha River Venture Capital Fund, focuses on the Internet, telecommunications, and wireless and payment investment. Former China Netcom CTO; during his tenure at AsiaInfo, he helped the company succeed in the Nasdaq IPO. Master‘s in Business Administration from Guanghua School of Management. Investment projects are iboxpay, Skyroam, GEO, and so on
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--蒋涛-->
+        <div class="md-modal md-effect-1" id="modal-16">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Management partner of Gobi Investment, focus on the domestic Internet, tourism and e-commerce field, He has invested in tuniu.com, Yododo, Zhiyoula, Weilver, the next stop and other tourism related projects, line0.com, Dianwoba, life radius and other O2O enterprises, and Pingread, Star Wardrobe and other mobile applications products. He was the website and business planning director of elong tourism network, the Managing Director of IAC Technology (corporate website and IT service provider) and has led the team for GE, Ingram Micro, Siemens and other international top 500 companies and the British Ministry of Industry and Commerce to successfully implement the website technology-based IT projects. bachelor's  in electrical engineering from Fudan University.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--钱海杰-->
+        <div class="md-modal md-effect-1" id="modal-17">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Partner of Chance Investment, mainly does investment of artificial intelligence and blockchain early project. With 5 years of state-owned commercial banks practitioners’ background, he helped well-known housing financing and responsible for a supply chain financial solutions project of foreign auto parts enterprise. He has 2 years experience in central enterprises background investment Management Company, worked as marketing and product design, development, training, road show and so on. bachelor's in software engineering, Fudan University.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--胡唐骏-->
+        <div class="md-modal md-effect-1" id="modal-18">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Vice president of Gobi Investment, focuses on domestic cloud computing, vehicle networking, voice recognition and mobile Internet and other fields. He served as project manager in the Martec Group Management Consulting Company in the United States of America, whose project involved traditional industries such as chemical and automotive, as well as emerging fields of new materials, new energy vehicles, optical communications and consumer electronics, and he served a number of Fortune 500 companies, including Dow Chemical, Henkel, DuPont, Honeywell, Corning, Sinochem International, China Railway Materials and so on. bachelor's  in chemistry  Shanghai Jiaotong University and passed the CFA level 1 test.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--孔华威-->
+        <div class="md-modal md-effect-1" id="modal-19">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Director of Institute of Chinese Academy of Sciences, Shanghai Branch, partner of Starting Capital, IC coffee sponsor, italk salon founder; focus on the blockchain, Internet of things, virtual reality, cloud computing, large data and artificial intelligence and other fields, invest in many projects; He holds master's in theoretical physics from Zhejiang University and bachelor's  in theoretical physics from Peking University.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--邹均-->
+        <div class="md-modal md-effect-1" id="modal-20">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Zhongguancun blockchain industry alliance expert, Ph.D. in service contract, Macquarie University, Australia, MBA of Macquarie Business School, senior cloud computing expert, concerned about the blockchain technology and applications. Former chief architect of the financial department of IBM Australia, the current CTO of Heiner Cloud Computing co., Ltd. He has years of IT experience, whose research direction is the blockchain of financial technology, regulatory technology, and blockchain consensus algorithm. In 2016 at the IEEE International Conference of Web Services (ICWS) he published block-chain thesis, and won the best paper award. He won the "President Award" the Macquarie University President awarded, Financial Beijing high-end foreign expert, and published more than 20 papers in the international conference journals.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--王大炮-->
+        <div class="md-modal md-effect-1" id="modal-21">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Master's  in computer science from Zhong Shan University, a formal member of the Alibaba architecture group, famous coin circle and chain circle opinion leader, evangelist of domestic bitcoin and , and known for its expertise in investing in blockchain projects. Now he is the person in charge of "chain investigation" of blockchain professional evaluation agency, person in charge of "future virtual currency" which is a well-known public account.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--吴韧-->
+        <div class="md-modal md-effect-1" id="modal-22">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Ph.D.，famous computer chess expert，AMD Heterogeneous System Chief Software Architect
+                HP Laboratory，CUDA Reacher Center Chief Reacher，Baidu remarkable scientist，NovuMind founder.
+                Had worked as remarkable scientist in Baidu Institute of Deep Learning.
+                </p>
+                <p class="n-text-indent">
+                    Independently designed Chinese Chess Super Program in the world—“Meng Ru Shen Ji” won the Champion in Computer Chess Olympic Competition twice.
+                </p>
+                <p class="n-text-indent">
+                    His doctoral study "the abductive algorithm and its application" is better than contemporary computer science scholar, Turing Award winner Ken Thompson invented the classic algorithm.
+                </p>
+                <p class="n-text-indent">
+                    He is using abductive algorithm to research Chinese Chess endgame systematically and made a significant discovery. He is the first person in the world that using computer produced knowledge to supplement human being knowledge.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--许超逸-->
+        <div class="md-modal md-effect-1" id="modal-23">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Bachelor's in Chemical of An Hui University，Investment director of well-known blockchain investment institutions. Investment director of Calf VC. Thirteen years high-tech industry research and management experience. An angel investor in AI and blockchain fields.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--张华-->
+        <div class="md-modal md-effect-1" id="modal-24">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Starting entrepreneurship from 2014 in blockchain and digital asset field, is committed to the blockchain applications and finance, payment, trading and other fields, industry opinion leaders. Awarded annual female CIO 2016 annual FinTech Jie Pu. bachelor's  in Shanghai Jiao Tong University.
+                </p>
+                <p class="n-text-indent">
+                    Worked for A.T.Kearney、 analyst for HuaXia dun& bradstreet、Strategic Consultant for Euromonitor International. Served in the Visa, Mastercard and other world-renowned financial institutions engaged in financial, payment. Engineering industry analysis and strategic consulting work for the world's top 500 enterprises. Quantify private equity entrepreneurship experience, good at stock, stock index futures and digital asset analysis and strategy research and development.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--陈乡长-->
+        <div class="md-modal md-effect-1" id="modal-25">
+            <div class="n-profile">
+                <h3>
+                    Founder of China's famous start-up media, founder of Tuoniao.Fm media.
+                </h3>
+                <p class="n-text-indent">
+                    Engaged in business investment and business service for nearly ten years, worked for the Shanghai City College of science and technology entrepreneurship foundation and Shanghai well-known venture capital institutions and venture relay groups. Serving more than thousands early entrepreneurial project, have experienced new media operation experience and resources of venture capital. Tuoniao.Fm media is early domestic well-known new media in venture capital field, and has got the 2 round of financing, its market valuation of tens of millions. From the end of 2016, participated in the domestic and foreign more than 10 high-quality blockchain project investment, and at the same time hatching Tuniao blockchain Token Sale.tt. Tuoniao is an integrated platform for domestic professional blockchain industry. Recent did incubation services more than 10 high-quality blockchain and digital currency projects, trying to construct the digital currency field of investment banking services.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--胡非凡-->
+        <div class="md-modal md-effect-1" id="modal-26">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Venture capitalist, solid theoretical and operational experience in corporate strategy and financial investment. Good at finding early investment opportunities. Excellent multinational investment banking experience in European institution. Participant in numerous cross-border corporate cooperation. Mastering various language and culture. Full dedication in big data and internet investment. Deep understanding in big data and block chain. Early investor in the block chain sector with several successful projects.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--Srikar Varadaraj-->
+        <div class="md-modal md-effect-1" id="modal-27">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Srikar Varadaraj is the co-founder of Chain Intelligence, a blockchain consulting and research group dedicated to high-quality blockchain research. He received his Masters in Computer Science from Columbia University and is also the Head of Technical Research at the Columbia University Blockchain Lab, focusing on both the trading aspects of cryptocurrencies as well as the theoretical foundation of consensus algorithms and Byzantine Agreement. He actively consults with ICO projects, offering analysis of token sales and incentives of miners and users in the system. As a software developer he has worked at Google and conducted research in Number Theory and Algebraic Topology at Columbia. Srikar was also on the All-American Chess Team and has maintained a keen interest in AI and algorithms for improving computations in high dimensional spaces.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--Kevin Choi-->
+        <div class="md-modal md-effect-1" id="modal-28">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Kevin Choi is the co-founder of Chain Intelligence, a blockchain consulting and research group dedicated to high-quality blockchain research. He is also the Head of Applied Research at the Columbia University Blockchain Lab, exploring the applicational aspects of blockchain and cryptocurrency based on theoretical consensus models. Conducting market research of various protocols in the blockchain space, he actively consults nterested clients and reviews whitepapers for ICO projects. As a smart contract developer, he has written DApps (decentralized applications),   one of which is published on State of the DApps alongside EtherDelta, Storj, and OmiseGo. As a mathematician, he has conducted research in Number Theory, Algebraic Geometry, and   Theoretical Cryptography at Columbia.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!-- -->
+        <div class="md-modal md-effect-1" id="modal-29">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <div class="md-modal md-effect-1" id="modal-30">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--科银资本-->
+        <div class="md-modal md-effect-1" id="modal-31">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    CollinStar Capital is an Australian venture capital firm specialising in FinTech, blockchain and cryptocurrency investments. The company complies with Australian financial services laws and is the authorised representative under AFS license number 483761. Compliance is at the forefront of Collinstar’s priority. Established in 2015, CollinStar Capital has now become Australia’s and one of the world’s leading blockchain and cryptocurrency investment firms. CollinStar Capital was an early investor in many emerging cryptocurrencies, including Bitcoin, Ethereum and Litecoin. We have been involved in the launching of projects operating within the blockchain infrastructure, and established our cloud computing centre, along with other assets. Since the end of 2016, CollinStar Capital has provided venture capital to dozens of early blockchain projects which have been distributed all over the blockchain industry.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--区块链合资企业-->
+        <div class="md-modal md-effect-1" id="modal-32">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Blockchain Ventures is a close-ended fund that invests in cryptocurrency and digital assets, including through Initial Coin Offerings and Token Sales to achieve target returns. The Fund will also invest in the equity of predominantly Australian blockchain technology companies through an Australian based venture capital limited partnership to strengthen the Fund’s access to cryptocurrency and digital asset investment opportunities. The Fund has access to Token Sales and other cryptocurrency and digital asset investment opportunities, many of which are exclusive or proprietary deals, through the management team’s global business operations involving the whole value chain in the blockchain industry.  This includes Token Sale advisory, Token Sale crowdfunding platform, cryptocurrency exchange, cryptocurrency development, cryptocurrency payment platform, cryptography research lab provided jointly by Monash University, Hong Kong Polytechnic University and Shanghai Jiaotong University; equity based blockchain venture capital fund.  Key risks are managed through a due diligence process that applies the deep cryptocurrency trading experience of the Fund’s management team.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <div class="md-modal md-effect-1" id="modal-33">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <div class="md-modal md-effect-1" id="modal-34">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    The NEO council is a non-profit organization and is the management organization for its blockchain community. NEO is a digital asset enabled by blockchain technology and digital identity. NEO is a distributed network, using smart contracts in an automatic fashion for the management of digital assets in order to carry out "intelligent economy".
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--CBL-->
+        <div class="md-modal md-effect-1" id="modal-35">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                    Columbia Blockchain Lab is the central resource for Blockchain technology education at Columbia University. It aims at fostering a culture that routinely analyzes the revolutionary ways in which blockchain technology impacts society. Since its foundation, CBL has connected numerous high-profile blockchain projects to developers as well as investors.
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <!--CBL-->
+        <div class="md-modal md-effect-1" id="modal-36">
+            <div class="n-profile">
+                <p class="n-text-indent">
+                </p>
+                <button class="md-close btn-sm btn-primary">
+                    Close me!
+                </button>
+            </div>
+        </div>
+        <div class="md-overlay">
+        </div>
+        <!--发展历程-->
+        <div class="n-mb-big js-offset" id="lc">
+        </div>
+        <div class="n-part-eight">
+            <h1 class="n-block text-center n-mb5">
+                Development Milestone
+            </h1>
+            <div class="n-develop">
+                <dl class="n-table">
+                    <dt>
+                        January 2012
+                    </dt>
+                    <dd>
+                        <img src="./static/y.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            The first Chinese voice assistant, Smart 360, was released.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        January 2013
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            The first artificial intelligence semantic open platform, Semantic Cloud Oriented APP Domain, was released.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        June 2013
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            Smart 360 becomes the first third-party vocal assistant platform to hit ten million users in China.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        June 2014
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            The world's first artificial intelligent speakers, small zhi, were released several months before Amazon Alexa. Small zhi was equipped with semantic cloud brain.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        July 2014
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            Member of Council of China Electronic Acoustics Association.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        December 2015
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            Small zhi housekeeping robot was released, equipped with semantic cloud brain 2.0.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        December 2015
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            CEO Feng He won the title of Innovative Figures in the Shanghai computer industry.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        March 2016
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            Small zhi housekeeper robot and HTC Vive virtual reality helmet together received CHINABANG award and 2016 annual Innovation Awards.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        April 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            New upgraded on semantic cloud brain 2.0, released the brand new cloud brain platform named "DeepBrain".
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        May 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            Started a project which researched a cloud brain artificial intelligence operating system utilizing blockchain techology.
+                            <br>
+                                Set up a blockchain laboratory, based on blockchain application architecture that came out of research.
+                            </br>
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        May 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            DeepBrain stationed in Institute of Artificial Intelligence in Nansha District, Guangzhou to build AI cloud OS.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        May 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            DeepBrain skills platform has more than 1000 skills. It is the first manufacturer of an artificial intelligence skills platform in China.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        June 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            Received 32 million CNY of angel investment from Jinsha River Investment, Gobi Investment, and Chance Investment.
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        July 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            1. DeepBrain platform skills store's HTML5 version was released, and consumers could freely add skills for AI hardware.
+                            <br>
+                                2. DeepBrain Chain token sale white paper 0.6 was released.
+                            </br>
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        August 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            DBC won the first prize in the business community of the SMP2017 Chinese man-machine dialogue evaluation at Harbin Institute of Technology. More than 30 domestic top artificial intelligence teams participated in this competition.
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--发展计划-->
+        <div class="n-mb-big" id="jh">
+        </div>
+        <div class="n-part-nine">
+            <h1 class="n-block text-center n-mb5">
+                Development Plan
+            </h1>
+            <div class="n-develop">
+                <dl class="n-table">
+                    <dt>
+                        August 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            1. DeepBrain chain Token Sale white paper 1.0 was released.
+                            <br>
+                                2. Started Pre Token Sale program.
+                            </br>
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        September 2017
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            1. R & D team moved to new office in HongQiao Paradise Walk in Hongqiao Business Circles of Shanghai.
+                            <br>
+                                2. It was invited to participate in China's AI 30 people closed door forum and interpretation of the State Council's "notice of new generation of artificial intelligence development planning" internal seminar in Beijing.
+                                <br>
+                                    3. DeepBrain Chain was invited to participate in the "digital asset summit".
+                                </br>
+                            </br>
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        2017 Q4
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            1. Complete Pre Token Sale Roadmap.
+                            <br>
+                                2. Token Sale and complete Token Sale recruitment.
+                                <br>
+                                    3. DeepBrain set up a joint laboratory with Shanghai's branch of the Chinese Academy of Sciences.
+                                    <br>
+                                        4. DeepBrain Chain was invited to participate in the "First Global Financial Technology and BlockChain China Summit 2017" in October.
+                                        <br>
+                                            5. The first phase of the DeepBrain Chain was completed on NEO, and the tokens were issued.
+                                            <br>
+                                                6. In order to support the aquisition and withdraw of coins, DBC assets were launched on third-party exchanges.
+                                                <br>
+                                                    7. The second phase of R & D for the associated artificial intelligence operating system module combined with the blockchain application is completed.
+                                                    <br>
+                                                        8. Disclosure of key quarterly information.
+                                                        <br>
+                                                            9. DeepBrain Chain promotion and manufacturer assessment.
+                                                        </br>
+                                                    </br>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </br>
+                            </br>
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        2018 Q1
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            1. DeepBrain Chain team annual summary conference.
+                            <br>
+                                2. DeepBrain skills store supports skills and services purchased through DBC.
+                                <br>
+                                    3. The third phase of R & D for the associated artificial intelligence operating system module, blockchain integrated application is completed.
+                                    <br>
+                                        4. DeepBrain Chain platform is officially on the NEO blockchain, with all code open sourced and mining software released.
+                                    </br>
+                                </br>
+                            </br>
+                        </span>
+                    </dd>
+                </dl>
+                <dl class="n-table">
+                    <dt>
+                        2018 Q2
+                    </dt>
+                    <dd>
+                        <img src="./static/y1.png"/>
+                    </dd>
+                    <dd>
+                        <span>
+                            1. Building blockchain technology research laboratories jointly with international first-class universities.
+                            <br>
+                                2. DeepBrain Chain innovation application competition will launch.
+                                <br>
+                                    3. Disclose key quarterly information.
+                                    <br>
+                                        4. DeepBrain Chain promotion and vendor access.
+                                        <br>
+                                            5. Increase progress on reaching the global artificial intelligence market.
+                                        </br>
+                                    </br>
+                                </br>
+                            </br>
+                        </span>
+                    </dd>
+                </dl>
             </div>
         </div>
     </div>
-    <div class="md-modal md-effect-17" id="modal-18">
-        <div class="md-content">
-            <div>
-                <img src="./static/Wechat.png">
-                </img>
+    <!--客户案例-->
+    <div class="n-mb-big js-offset" id="al">
+    </div>
+    <div class="n-white-bg n-al">
+        <div class="container">
+            <h1 class="n-block text-center n-font-black n-mb5">
+                合作客户
+            </h1>
+            <div class="n-case">
+                <ul>
+                    <li>
+                        <img src="./static/img_brand-actions@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-aispeech@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-espressif@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-jaki@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-thinkhome@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-smartisys@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-control@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-lenovo@2x.png"/>
+                    </li>
+                    <!--<li><img src="images/case/img_brand-datuo@2x.png"></li>-->
+                    <li>
+                        <img src="./static/img_brand-dnake@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-dongtong@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-dtj@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-elink@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-amazing@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-geeklink@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-hdl@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-huawei@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-hw@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-ingenic@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-atte@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-koti@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-yaolan@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-microsoft@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-poresee@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-ruiman@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-siemens@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-shenfu@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-shifeng@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-shunzhou@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-sinovoic@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-tc@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-taichuan@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-zoton@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-tvs@2x.png"/>
+                    </li>
+                    <li>
+                        <img src="./static/img_brand-uk@2x.png"/>
+                    </li>
+                    <!--<li><img src="images/case/img_brand-xinhechuang@2x.png"></li>-->
+                    <!--<li><img src="images/case/img_brand-yaolan@2x.png"></li>-->
+                </ul>
             </div>
         </div>
     </div>
-    <div class="md-overlay">
+    <script src="./static/jquery.min.js.下载">
+    </script>
+    <script src="./static/vedio.js.下载">
+    </script>
+    <script src="./static/footerEnglish.js.下载">
+    </script>
+    <div class="n-footer n-black-bg">
+        <div class="container">
+            <dl class="n-table n-pb n-mb2">
+                <dd class="n-footerLogo">
+                    <h3>
+                        <img src="./static/logo_white.png">
+                            DeepBrain Chain
+                        </img>
+                    </h3>
+                    <a class="downloadLogo" href="/logoImg.html" target="_blank">
+                        Logo download
+                    </a>
+                </dd>
+                <dd class="text-left">
+                    <h6 class="n-block n-font-gray">
+                        Business Cooperation
+                        <a class="n-block" href="mailto:info@deepbrainchain.org">
+                            info@deepbrainchain.org
+                        </a>
+                    </h6>
+                </dd>
+                <dd>
+                    <ul class="n-table footer-img">
+                        <li>
+                            <img src="./static/twitterEnglish.png">
+                                <small class="n-block text-center">
+                                    twitter
+                                </small>
+                            </img>
+                        </li>
+                        <li>
+                            <img src="./static/telegramEnglish.png">
+                                <small class="n-block text-center">
+                                    telegram
+                                </small>
+                            </img>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+            <footer class="n-black-bg text-center">
+                ©
+                <span class="n-year">
+                    2018
+                </span>
+                <a>
+                    DeepBrain Chain Foundation
+                </a>
+                22 North Canal Road#02-22, Singapore 048834
+            </footer>
+        </div>
     </div>
-    <!-- the overlay element -->
-    <!-- END Main container -->
-    <!--
-  <div class="wechat-code">
-    <span class="wechat-bg"></span>
-    <img src="images/Wechat.png">
-  </div>
-  <div class="wechat-code">
-    <span class="wechat-bg"></span>
-    <img src="images/Wechat.png">
-  </div>
-  -->
-    <!-- Scripts -->
-    <!-- 统计代码 -->
-    <script async="" src="./static/analytics.js.">
+    <script src="./static/bootstrap.min.js.下载">
     </script>
-    <!-- jq -->
-    <script src="./static/core.min.js">
+    <script src="./static/classie.js.下载">
     </script>
-    <script src="./static/canvas.js"></script>
-
-    <!-- 主体 -->
-    <script src="./static/thesaas.min.js">
+    <script src="./static/modalEffects.js.下载">
     </script>
-    <!--
-  <script>
-    $("#wechat").click(function(){
-      $(".wechat-code").show();
-    })
-    $(".wechat-bg").click(function(){
-      $(".wechat-code").hide();
-    })
-  </script>
-  -->
-    <script type="text/javascript">
-      $("#slideshow > div:gt(0)").hide();
-      setInterval(function() {
-       $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
-      }, 3000);
+    <script src="./static/index.js.下载">
     </script>
-    <script src="./static/classie.js">
+    <!--<script src="../videojs/js/video.min.js"></script>-->
+    <script>
+        var vids=document.getElementById("vids");
+    vids.play();
+    //    var v = document.getElementById("video");
+    //    var playPauseVideoBtn = $("#playPauseVideo");
+    //    function playPauseVideo(event) {
+    //
+    //        event.stopPropagation();
+    //        if(v.paused){
+    //            v.play();
+    //            console.log('播放');
+    //            playPauseVideoBtn.hide();
+    //            console.log('隐藏播放按钮');
+    //
+    //        }else {
+    //            v.pause();
+    //            console.log('暂停');
+    //            playPauseVideoBtn.show();
+    //            console.log('显示播放按钮');
+    //
+    //        }
+    //
+    //    }
+
+
+
+    //    function showHidePlayPauseVideoBtn(event) {
+    //        event.stopPropagation();
+    //        if($(playPauseVideoBtn).is(":hidden")){
+    //            $(playPauseVideoBtn).show();    //如果元素为隐藏,则将它显现
+    //            console.log('显示播放按钮');
+    //        }else{
+    //            $(playPauseVideoBtn).hide();     //如果元素为显现,则将其隐藏
+    //            console.log('隐藏播放按钮');
+    //        }
+    //    }
     </script>
-    <script src="./static/modalEffects.js">
-    </script>
-    <!--
-    <script type="text/javascript">
-      
-      function DropDown(el) {
-        this.dd = el;
-        this.placeholder = this.dd.children('span');
-        this.opts = this.dd.find('ul.dropdown > li');
-        this.val = '';
-        this.index = -1;
-        this.initEvents();
-      }
-      DropDown.prototype = {
-        initEvents : function() {
-          var obj = this;
-
-          obj.dd.on('click', function(event){
-            $(this).toggleClass('active');
-            return false;
-          });
-
-          obj.opts.on('click',function(){
-            var opt = $(this);
-            obj.val = opt.text();
-            obj.index = opt.index();
-            obj.placeholder.text(obj.val);
-          });
-        },
-        getValue : function() {
-          return this.val;
-        },
-        getIndex : function() {
-          return this.index;
-        }
-      }
-
-      $(function() {
-
-        var dd = new DropDown( $('#dd') );
-
-        $(document).click(function() {
-          // all dropdowns
-          $('.wrapper-dropdown-3').removeClass('active');
-        });
-
-      });
-
-    </script>
-  -->
 </body>

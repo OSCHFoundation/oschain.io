@@ -1,0 +1,50 @@
+/**
+ * Created by zhang on 17/11/16.
+ */
+document.writeln("   <nav class=\'navbar navbar-default navbar-fixed-top\'>");
+document.writeln("        <div class=\'container\'>");
+document.writeln("            <a class=\' n-logo pull-left\' href=\'indexEnglish.html\'><img" +
+    " src='images/logo_white.png'> DeepBrain Chain</a>");
+document.writeln("            <div class=\'pull-right\'>");
+document.writeln("                <ul class=\'n-menu\'>");
+document.writeln("                    <li><a href=\'indexEnglish.html\' >Homepage</a></li>");
+//隐藏ICO部分   style=\'display:none\'
+// document.writeln("                    <li><a href=\'tokenSaleEnglish.html\'>Token Sale</a></li>");
+// document.writeln("                    <li id=\'tokenSale\' class=\"dropdown\">");
+// document.writeln("                            <a href=\"#\" class=\"dropdown-toggle\" role=\"button\"" +
+//                    " id=\"dropdownMenu4\" data-toggle=\"dropdown\" aria-haspopup=\"true\"" +
+//     " aria-expanded=\"false\">Token Sale");
+// document.writeln("                                    <span class=\"caret\"></span>");
+// document.writeln("                            </a>");
+// document.writeln("                            <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu4\">");
+// document.writeln("                                <li><a href=\"kycEnglish.html\">KYC</a></li>");
+// document.writeln("                                <li><a href=\"tokenSaleEnglish.html\">Token Sale</a></li>");
+// document.writeln("                            </ul>");
+// document.writeln("                     </li>");
+document.writeln("                    <li><a href=\'indexEnglish.html#yj\' class=\'js-menu\'>Vision</a></li>");
+document.writeln("                    <li><a href=\'indexEnglish.html#jj\' class=\'js-menu\'>Introduction</a></li>");
+document.writeln("                    <li><a href=\'indexEnglish.html#ys\' class=\'js-menu\'>Advantages</a></li>");
+document.writeln("                    <li><a href=\'indexEnglish.html#td\' class=\'js-menu\'>Team</a></li>");
+document.writeln("                    <li><a href=\'indexEnglish.html#lc\' class=\'js-menu\'>History & Plan</a></li>");
+document.writeln("                    <li><a href=\'indexEnglish.html#al\' class=\'js-menu\'>Previous Clients</a></li>");
+// 隐藏语言选择   style=\'display:none\'
+// document.writeln("                    <li style=\'display:none\' class=\"dropdown\">");
+// document.writeln("                            <a href=\"#\" class=\"dropdown-toggle\" role=\"button\"" +
+//                    " id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\"" +
+//     " aria-expanded=\"false\">English");
+// document.writeln("                                    <span class=\"caret\"></span>");
+// document.writeln("                            </a>");
+// document.writeln("                            <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">");
+// document.writeln("                                <li><a href=\"index.html\">中文</a></li>");
+// document.writeln("                                <li><a href=\"indexEnglish.html\">English</a></li>");
+// // document.writeln("                                <li><a href=\"#\" onclick=\'getText(this)\'>日语</a></li>");
+// document.writeln("                            </ul>");
+// document.writeln("                     </li>");
+document.writeln("                </ul>");
+document.writeln("            </div>");
+document.writeln("        </div>");
+document.writeln("    </nav>");
+
+
+
+
