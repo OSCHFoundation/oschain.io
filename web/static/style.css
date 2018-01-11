@@ -69,6 +69,12 @@ textarea {
 label {
 	font-weight: 400;
 }
+
+.clear{zoom:1;}
+.clear:after{content: "";display: block;clear: both; }  /* 请浮动 */   
+.fl{float: left;}
+.fr{float: right;}
+
 /* 设置HTML5元素为块 */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, navall, section {
@@ -93,7 +99,6 @@ a, button, input, i {
 /* 图片自适应调整 并解决图片缩放的失真问题*/
 img {
 	display: inline-block;
-	max-width: 100%;
 	border: none;
 	interpolation-mode: bicubic;
 	-ms-interpolation-mode: bicubic;
@@ -285,11 +290,10 @@ header,ul,li{
 /*-------------公用样式------------*/
 
 body{
-	padding-top:60px;
+	padding-top:185px;
 	font-size:24px;
 	line-height:2;
 	font-family:Arial, Helvetica, "黑体","微软雅黑",sans-serif;
-	background:#040819 url(../images/bagImg.jpg) no-repeat top;
 }
 .container {
 	max-width: 1080px !important;
@@ -298,10 +302,10 @@ body{
 }
 .navbar-default{
 	border-bottom:0;
-	background:#000;
-	/*width: 1080px;*/
+	background:#001e3f;
 	margin: 0 auto;
-	/*background-color: #00e6f5;*/
+	height: 185px;
+	width: 1080px;
 }
 
 .navbar-default .container{
@@ -309,16 +313,14 @@ body{
 	width: 1080px;
 }
 
-.navbar-default .pull-left{
-	/*background-color: yellowgreen;*/
-	margin-top: 18px;
-	/*width: 22%;*/
-	/*width: 237px;*/
+.navbar-default .pull-right{
+	margin-top: 75px;	
+	margin-right: 70px;
+}
+.navbar-default .pull-right a{
+	font-size: 16px;	
 }
 
-.navbar-default .pull-right{
-	/*background-color: rebeccapurple;*/
-}
 
 @font-face {
   font-family: 'n-iconfont';  /* project id 408938 */
@@ -343,9 +345,9 @@ body{
 }
 .n-logo{
 	/*background-color: #3c763d;*/
-	margin-top:8px;
-	margin-left: 180px;
-	font-size:14px;
+	margin-top: 80px;
+	margin-left: 86px;
+	font-size:17px;
 }
 
 .n-logo h3{
@@ -355,8 +357,8 @@ body{
 }
 
 .n-logo img{
-	width: 42px;
-	height: 33px;
+	width: 54px;
+	height: 54px;
 }
 
 /*------------隐藏 header logo的<i>标签----------------*/
@@ -374,12 +376,11 @@ body{
 .n-menu{
 	font-size:14px;
 	line-height:1.5;
-
 }
 .n-menu li{
 	/*background-color: #996b6d;*/
 	float:left;
-	margin:0 20px;
+	margin:0 10px;
 	/*margin:0 10px;!*英文下缩小间距*!*/
 	padding:20px 0 18px 0;
 	border-bottom:3px solid transparent;
@@ -448,12 +449,18 @@ body{
 }
 
 .n-banner{
-	/*background-color: yellow;*/
-	height:400px;
-    /*<!--隐藏视频部分-->*/
-    /*height:900px;  !*修改n-banner部分整体高度*!*/
+	background: #463f37 url(/static/bkg.png);
+	height: 662px;
+	padding-top: 1px;
 }
-
+.n-banner .intro{ 
+	width: 500px;
+	margin: 0 auto; 
+	font-size: 21px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 30px;
+}
 
 .n-banner-font{
 	/*background-color: #3c763d;*/
@@ -585,16 +592,20 @@ small{
 	text-indent:2em;
 }
 .n-media{
-	border:1px solid #2da3ff;
+	width: 876px; 
+	height: 150px;
+	margin: 20px auto;
+	border:1px solid #ec8e25;
 	border-radius:5px;
+	padding: 24px 34px; 
 }
 .n-media dl dt,.n-media dl dd{
-	vertical-align:top !important;
+	vertical-align:middle !important;
 }
-.n-media dt{
-	padding-right:40px;
-	width:128px;
+.n-media dl dd{
+	padding-left: 44px;	
 }
+
 .n-media dt img{
 	padding:4px;
 	background:#213d78;
@@ -1088,5 +1099,32 @@ footer{
 	/*padding:25px 20px;*/
 	/*font-size: 19px;*/
 /*}*/
-
+.container{   background: #001e3f; } 
 .teamAdvisor span{ font-size: 14px; }
+.n-coreteam img{ border-radius: 3px; }
+.downloadPDF{ text-align: center; }
+.downloadPDF .btn{ width: 185px; height: 38px; line-height: 24px;}
+
+.n-part-one{ padding-top: 1px; width: 1080px; }
+.flytitle{ width: 998px; margin: 0 auto; margin-top: 50px; }
+.flytitle .line{ height: 1px; width: 407px;  background: #c0c7d0; margin-top: 20px; }
+.flytitle button{ width: 184px; height: 40px; line-height: 38px;  border: 1px solid #c0c7d0; border-radius: 4px; background: #001e3f; }
+.yuanimg{ width: 600px; margin: 0 auto;  display: block; margin-top: 35px; }
+.n-part-one p{ color: #ec8e25; text-align: center; margin-top: 30px; } 
+
+.n-part-two p{ width: 910px; margin: 0 auto; font-size: 14px; text-align: center; line-height: 24px;  margin-top: 22px; }
+.n-media dd h2{ color: #ec8e25; font-size: 21px; }
+.n-media dd p{ font-size: 14px;  }
+.icontype{  width: 96px; height: 96px; border-radius: 4px; }
+.engineer{ background: #ec8e25 url(./typeIcon/icon1.png) no-repeat 14px 13px;  }
+.firm{ background: #ec8e25 url(./typeIcon/icon2.png) no-repeat 14px 13px; }
+.company{ background: #ec8e25 url(./typeIcon/icon3.png) no-repeat 12px 12px; }
+.wallet{  background: #ec8e25 url(./typeIcon/icon4.png) no-repeat 12px 12px; } 
+.icontype5{  background: #ec8e25 url(./typeIcon/icon5.png) no-repeat 12px 27px; }
+.icontype6{  background: #ec8e25 url(./typeIcon/icon6.png) no-repeat 12px 15px; }
+.icontype7{  background: #ec8e25 url(./typeIcon/icon7.png) no-repeat 12px 11px; } 
+.n-coreteam{ width: 998px; margin: 0 auto;  }
+.n-coreteam img{ width: 154px; height: 154px; border-radius: 50%; }
+.n-coreteam span{ font-size: 14px;  color: #fff;  }
+.teamWidth{  width: 760px; } 
+.teamWidth2{  width: 560px; }

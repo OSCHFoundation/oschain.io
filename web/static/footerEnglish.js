@@ -19,21 +19,11 @@
                     $(this).addClass("n-current");
                 }
             }
-            // if (_url === undefined){
-            //     $(this).removeClass("n-current");
-            // }
             if (str == "/") {
                 $(".n-menu li:first-child").addClass("n-current");
             }
         });
         $(".n-menu li a").click(function () {
-            // if (($(this).attr("class")) === 'dropdown-toggle'){
-            //     $(this).parent("li").removeClass("n-current");
-            //     console.log($(this).attr("class"));
-            //     return;
-            // }
-
-
             var _url = $(this).attr("href");
             console.log(_url);
             console.log(_url + '+++++' + str);
@@ -77,9 +67,6 @@
         //获取当前年
         var year = myDate.getFullYear();
         $("span.n-year").html(year);
-
-
-
     });
 })(jQuery);
 
