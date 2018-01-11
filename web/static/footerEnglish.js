@@ -1,9 +1,5 @@
-/**
- * Created by zhang on 17/11/16.
- */
 (function ($) {
     $(document).ready(function () {
-
         var url = window.location.href;
         var symbols = url.lastIndexOf("/");
         var str = url.substring(symbols + 1, url.length);
@@ -11,7 +7,6 @@
         $(".n-menu>li").each(function () {
             $(this).removeClass("n-current");
             var _url = $(this).children("a").attr("href");
-            console.log(_url + '---' + str);
             if (_url == str ) {
                 $(this).addClass("n-current");
             } else {

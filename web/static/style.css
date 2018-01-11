@@ -16,7 +16,7 @@ a:focus, input:hover, button:hover, input[type='button']:hover {
 	outline: none;
 }
 a:active, a:hover {
-    color:#00e6f5;
+    color:#ec8e25;
 }
 a, a:hover, a:focus {
 	text-decoration: none!important;
@@ -387,7 +387,7 @@ body{
 	
 }
 .n-menu li.n-current{
-	border-bottom-color:#00e6f5;
+	border-bottom-color:#ec8e25;
 	/*border-bottom-color:rebeccapurple;*/
 }
 .n-menu li.n-current a{
@@ -397,7 +397,7 @@ body{
 	/*color:#fff;*/
 /*}*/
 .n-menu li a:hover{
-	color:#00e6f5;
+	color:#ec8e25;
 
 }
 
