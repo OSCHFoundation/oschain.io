@@ -644,6 +644,7 @@ small{
 	padding:30px 40px;
 	border-radius:5px;
 	background:#152952;
+	opacity: 0.8;
 }
 .n-al{
 	padding:100px 0 120px 0;
@@ -1138,3 +1139,4 @@ footer img{ width: 54px; height: 54px; margin-top: 54px;  margin-left: 92px; }
 footer h3{ margin-top: 72px; margin-left: 20px; }
 .tbox{ margin-top: 40px; }
 body{ background: #282828; }
+.md-modal p{ font-size: 18px; }

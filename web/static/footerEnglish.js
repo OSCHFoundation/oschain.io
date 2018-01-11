@@ -25,8 +25,6 @@
         });
         $(".n-menu li a").click(function () {
             var _url = $(this).attr("href");
-            console.log(_url);
-            console.log(_url + '+++++' + str);
             if (_url != '#'){
                 $(this).parent("li").addClass("n-current");
                 $(".n-menu li").removeClass("n-current");
@@ -39,7 +37,6 @@
         $(window).scroll(function (ev) {
             // 当前滚动条距离顶部的距离
             if ($("body").hasClass("js-scroll")) {
-
                 var scroll = $(window).scrollTop();
                 // 申明索引
                 var activeIndex = -1;
@@ -51,7 +48,6 @@
                         return;
                     }
                 });
-
                 //console.log(activeIndex);
                 // 菜单处理
                 var menus = $(".n-menu .js-menu");
