@@ -1043,6 +1043,11 @@ footer{
 	margin:0 auto;
 	width:750px;
 }
+.n-w600{
+	/*background-color: yellowgreen;*/
+	margin:0 auto;
+	width:580px;
+}
 
 .n-w700 li img{
 	/*width: 200px;*/
@@ -1084,5 +1089,4 @@ footer{
 	/*font-size: 19px;*/
 /*}*/
 
-
-
+.teamAdvisor span{ font-size: 14px; }
