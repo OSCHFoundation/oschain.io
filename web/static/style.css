@@ -657,7 +657,7 @@ small{
 }
 .n-footer dd img{
 	width: 42px;
-	height: 33px;
+	height: 42px;
 }
 .n-footer h3{
 	margin-top:-10px;
@@ -1128,3 +1128,11 @@ footer{
 .n-coreteam span{ font-size: 14px;  color: #fff;  }
 .teamWidth{  width: 760px; } 
 .teamWidth2{  width: 560px; }
+.n-coreteam .tImg{ width: 222px; height: 222px; }
+.n-part-six h3{ color: #ec8e25; }
+.n-part-six span{ color: #ec8e25; }
+.friendbox{ padding-top: 25px; }
+.friendbox img{ width: 115px;   }
+footer{ height: 146px;  }
+footer img{ width: 54px; height: 54px; margin-top: 54px;  margin-left: 92px; }
+footer h3{ margin-top: 72px; margin-left: 20px; }
