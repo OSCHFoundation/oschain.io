@@ -1,24 +1,6 @@
 /**
  * Created by zhang on 17/11/16.
  */
-document.writeln(" <div class=\'n-footer n-black-bg\'>");
-document.writeln("        <div class=\'container\'>");
-document.writeln("            <dl class=\'n-table n-pb n-mb2\'>");
-document.writeln("                <dd class=\'n-footerLogo\'><h3><img" +
-    " src='images/logo_white.png'>  DeepBrain Chain</h3><a target=\'_blank\'                 href=\'logoImg.html\' class=\'downloadLogo\'>Logo download</a></dd>");
-document.writeln("                <dd class=\'text-left\'><h6 class=\'n-block n-font-gray\'>Business Cooperation<a class=\'n-block\' href=\'mailto:info@deepbrainchain.org\'>info@deepbrainchain.org</a></h6></dd>");
-document.writeln("                <dd>");
-document.writeln("                    <ul class=\'n-table footer-img\'>");
-document.writeln("                        <li><img src=\'images/twitterEnglish.png\'><small class=\'n-block text-center\'>twitter</small></li>");
-document.writeln("                        <li ><img src=\'images/telegramEnglish.png\'><small class=\'n-block text-center\'>telegram</small></li>");
-document.writeln("                    </ul>");
-document.writeln("                </dd>");
-document.writeln("            </dl>");
-document.writeln("            <footer class=\'n-black-bg text-center\'>©<span class=\'n-year\'></span>  <a>DeepBrain Chain Foundation</a>22 North Canal Road#02-22, Singapore 048834</footer>");
-document.writeln("");
-document.writeln("        </div>");
-document.writeln("    </div>");
-
 (function ($) {
     $(document).ready(function () {
 
