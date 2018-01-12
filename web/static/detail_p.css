@@ -781,14 +781,13 @@ a {
 	/*background-color: #1d7db1;*/
 	/*width:830px;*/
 	/*height:566px;*/
-	height: 360px;
 	border-radius:6px;
 	/*background:#253393;*/
 	/* float:left; */
 	margin:  5px 5px;
 	overflow:hidden;
 	position:relative;
-	border: 1px solid #253393;
+	border: 1px solid #816952;
 	}
 .video_ls.on{
 	position:fixed;

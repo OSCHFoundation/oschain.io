@@ -8,13 +8,12 @@ var ModalEffects = (function() {
 		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
 
 			// console.log(el.getAttribute( 'data-modal' ));
-			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
+			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) );
+				/*close = modal.querySelector( '.md-close' );*/
 			// alert(close);
 
 			function removeModal( hasPerspective ) {
 				classie.remove( modal, 'md-show' );
-
 				if( hasPerspective ) {
 					classie.remove( document.documentElement, 'md-perspective' );
 				}
@@ -36,10 +35,10 @@ var ModalEffects = (function() {
 				}
 			});
 
-			close.addEventListener( 'click', function( ev ) {
+			/*close.addEventListener( 'click', function( ev ) {
 				ev.stopPropagation();
 				removeModalHandler();
-			});
+			});*/
 
 		} );
 
