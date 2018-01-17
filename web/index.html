@@ -1,872 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-        <meta content="webkit" name="renderer"/>
-        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
-        <title>
-            OpenSource Chain
-        </title>
-        <link href="./static/bootstrap.min.css" rel="stylesheet"/>
-        <link href="./static/component.css" rel="stylesheet"/>
-        <link href="./static/style.css" rel="stylesheet" type="text/css"/>
-        <!-- <link href="./static/EnglishStyle.css" rel="stylesheet" type="text/css"/> -->
-        <link href="/logo.ico" mce_href="./logo.ico" rel="icon" type="image/x-icon"/>
-        <link href="./static/font_u4qz1594lnixusor.css" rel="stylesheet" type="text/css"/>
-        <!--<link rel="stylesheet" type="text/css" href="../video/css/common.css">-->
-        <link href="./static/detail_p.css" rel="stylesheet" type="text/css"/>
-    </head>
-</html>
-<body class="js-scroll">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <a class=" n-logo pull-left" href="/index.html">
-            <img src="./static/blogo.png">
-                OpenSource Chain
-            </img>
-        </a>
-        <div class="pull-right">
-            <ul class="n-menu">
-                <li>
-                    <a href="/index.html">
-                        主页
-                    </a>
-                </li>
-                <li class="n-current">
-                    <a class="js-menu" href="/index.html#yj">
-                        愿景
-                    </a>
-                </li>
-                <li>
-                    <a class="js-menu" href="/index.html#jj">
-                        介绍
-                    </a>
-                </li>
-                <li>
-                    <a class="js-menu" href="/index.html#cy">
-                        受众群体
-                    </a>
-                </li>
-                <li>
-                    <a class="js-menu" href="/index.html#ys">
-                        优势
-                    </a>
-                </li>
-                <li>
-                    <a class="js-menu" href="/index.html#td">
-                        团队
-                    </a>
-                </li>
-                <!-- <li>
-                        <a class="js-menu" href="/index.html#lc">
-                            历史 & 计划
-                        </a>
-                    </li> -->
-                <li>
-                    <a class="js-menu" href="/index.html#al">
-                        合作伙伴
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="n-banner n-por">
-            <h1 class="n-block intro">
-                为去中心化硬件开源打造的安全高效的生态平台，
-                <br/>
-                给予价值激励体系和智能合约的硬件协作体系，
-                <br/>
-                革命性解放工程师的生产力，
-                <br/>
-                提升全球硬件行业全产业链效率。
-            </h1>
-            <!--隐藏视频部分-->
-            <!-- onclick="showHidePlayPauseVideoBtn(event)"-->
-            <div class="n-sp">
-                <div class="video_ls">
-                    <video id="vids" src="./red.mp4">
-                        您的浏览器不支持h5标签,请升级或换个浏览器
-                    </video>
-                    <!--标题-->
-                    <div class="title_top">
-                        <!--视频标题-->
-                    </div>
-                    <!--暂停-->
-                    <div id="pass" style="display: none;">
-                        <img src="./static/zt.png">
-                        </img>
-                    </div>
-                </div>
-                <!--控制器-->
-                <div class="controls">
-                    <!--展厅播放快进快退音量全屏-->
-                    <div class="trol_list">
-                        <!--暂停和快进快退-->
-                        <div class="list_1">
-                            <!--<i class="iconfont icon-zanting2" id="ztbf"><img src="images/pauseBtn.png"></i>-->
-                            <div class="ztbf">
-                                <img id="ztbf" src="./static/pauseBtn.png"/>
-                            </div>
-                        </div>
-                        <!--音量-->
-                        <div class="voice" style="display: none;">
-                            <i class="iconfont icon-yinliang" style="float:left;">
-                            </i>
-                            <div class="voicep">
-                                <div id="vBar">
-                                    <div id="vBar_in">
-                                    </div>
-                                </div>
-                                <div id="vBtn">
-                                </div>
-                            </div>
-                        </div>
-                        <!--时间-->
-                        <div class="vtime">
-                            <font id="nTime">
-                                00:00:05
-                            </font>
-                            /
-                            <em id="aTime">
-                                00:02:18
-                            </em>
-                        </div>
-                        <!--全屏-->
-                        <i class="iconfont icon-quanping" id="qp" style="display: none">
-                        </i>
-                    </div>
-                </div>
-            </div>
-            <div class="downloadPDF">
-                <!-- download="DeepBrainChainFile.pdf"-->
-                <!--onclick="clickDownloadPDF(this)"-->
-                <a class="btn btn-default n-disabled" href="/DeepBrainChainWhitepaper.pdf" id="downloadFile" target="_blank">
-                    白皮书 下载
-                </a>
-            </div>
-        </div>
-        <div class="js-offset" id="yj">
-        </div>
-        <!--愿景-->
-        <div class="n-part-one" >
-            <div class="flytitle  clear">
-                <div class="line fl"></div>
-                <button class="fl">愿景</button> 
-                <div class="line fr"></div>
-            </div>
-            <img src="./static/zhizhu.png" class="yuanimg" alt="ic">
-            <p class="yuanp">
-                基于该平台，所有硬件领域开源、信息流动、价值流动
-            </p>
-            <!--<div class="n-yj">愿景二：为物联网设备提供去中心化、可永久维护、安全的基础设施，让人工智能无处不在。</div>-->
-        </div>
-        <!--项目简介-->
-        <div class="n-mb-big js-offset" id="jj">
-        </div>
-        <div class="n-part-two">
-            <div class="flytitle  clear">
-                <div class="line fl"></div>
-                <button class="fl">项目介绍</button> 
-                <div class="line fr"></div>
-            </div>
-            <p class="yuanp">
-                开源链（OSC）是第一个把电子行业的广义IP以智能合约的方法进行量化的平台。<br>
-                开源链平台对区块基础设施中性 （包括以太坊 ，星云链等），来构建电子行业的IP应用层。<br><br>
-                开源链平台用区块链技术驱动传统电子行业的技术开发流程、供应链、IP交易、媒体及网络社区的变革。把电子行业IP定量化，让数字资产能够自我演化，自我增值，增强参与者信任，从而把价值回馈给所有开源链的参与者。<br>
-                开源链平台对区块基础设施中性 （包括以太坊 ，星云链等），来构建电子行业的IP应用层。<br><br>
-                开源链平台用区块链技术驱动传统电子行业的技术开发流程、供应链、IP交易、媒体及网络社区的变革。把电子行业IP定量化，让数字资产能够自我演化，自我增值，增强参与者信任，从而把价值回馈给所有开源链的参与者。
-            </p>
-        </div>
-        <!--突出优势-->
-        <div class="n-mb-big js-offset" id="cy">
-        </div>
-        <div class="n-part-11">
-            <div class="flytitle  clear">
-                <div class="line fl"></div>
-                <button class="fl">受众群体</button> 
-                <div class="line fr"></div>
-            </div>
-            <div class="n-media n-mb4">
-                <dl class="n-table">
-                    <dt class="icontype engineer"></dt>
-                    <dd >
-                        <h2>
-                            工程师
-                        </h2>
-                        <p>
-                            对工程师，可精准开源所储备专业知识，并获取长期超预期回报。
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-            <div class="n-media  n-mb4">
-                <dl class="n-table">
-                    <dt class="icontype firm">
-                    </dt>
-                    <dd>
-                        <h2>
-                            硬件生产厂商
-                        </h2>
-                        <p>
-                            对硬件生产厂商，可基于区块链技术对开源项目进行信任预审，极大的降低了试错成本及采购环节消耗。
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-            <div class="n-media n-mb4">
-                <dl class="n-table">
-                    <dt class="icontype company"></dt>
-                    <dd>
-                        <h2>
-                            芯片设计公司
-                        </h2>
-                        <p>
-                            对芯片设计公司，可利用特定开源项目实现巨大的销售助推，尤其在所有芯片设计公司面临的积压库存的世界性难题上，可以通过使用库存芯片开源当下热门应用方式解决。
-                        </p>
-                        <p>
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <!--突出优势-->
-        <div class="n-mb-big js-offset" id="ys">
-        </div>
-        <div class="n-part-three">
-            <div class="flytitle  clear">
-                <div class="line fl"></div>
-                <button class="fl">平台价值</button> 
-                <div class="line fr"></div>
-            </div>
-            <div class="n-media n-mb4">
-                <dl class="n-table">
-                    <dt class="icontype wallet"></dt>
-                    <dd>
-                        <h2>
-                            硬件钱包
-                        </h2>
-                        <p>
-                            硬件行业规模巨大，单集成电路就是中国第一大进口商品（超过原油）：而其中一些应用爆发，经常造成某些芯片严重缺货。利用平台的智能合约可进行远期锁定及交易结算。
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-            <div class="n-media n-mb4">
-                <dl class="n-table">
-                    <dt class="icontype icontype5"></dt>
-                    <dd>
-                        <h2>
-                            硬件方案的交易
-                        </h2>
-                        <p>
-                            在纯信息流动模式下，方案的交易完全无法量化。而基于区块链智能合约技术，极其适合方案交易，甚至可以以智能合约触发到各个时间节点：如电路原理图、电路原型、测试结果、小批量数据。。。
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-            <div class="n-media n-mb4">
-                <dl class="n-table">
-                    <dt class="icontype icontype6"></dt>
-                    <dd>
-                        <h2>
-                            硬件链条所有数据留存及交易
-                        </h2>
-                        <p>
-                            硬件产业链条上有无数微小节点，而数据（如数学推演数据、仿真数据、测试数据、小批量生产数据、大批量PPM数据）对于整个产业链安全高效运转都很重要。硬件链条的所有数据通过区块链技术留存及交易，并确权劳动者劳动量，给链条加入了大量润滑剂及安全垫，可以说是一次基于区块链软件技术的硬件革命。
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-            <div class="n-media n-padding40">
-                <dl class="n-table">
-                    <dt class="icontype icontype7"></dt>
-                    <dd>
-                        <h2>
-                            从IDEA到产品，极速实现
-                        </h2>
-                        <p>
-                            评级优秀方案，社区投资人及硬件爱好者以OSC代币方式参与硬件项目众筹智能合约方式阶段性检验方案进展提升成功率，公平、高效、透明。
-                        </p>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <!--核心团队-->
-        <div class="n-mb-big js-offset" id="td">
-        </div>
-        <!--合作伙伴-->
-        <div class="n-mb-big" id="hzhb">
-        </div>
-        <div class="n-part-seven">
-            <div class="flytitle  clear">
-                <div class="line fl"></div>
-                <button class="fl">团队成员</button> 
-                <div class="line fr"></div>
-            </div>
-            <ul class="n-coreteam n-table">
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-34">
-                        <img alt="NEO" src="./static/people/zhang.jpg" width="246" />
-                        <h3 class="n-block">
-                            张洪为
-                        </h3>
-                        <span class="n-block">
-                            核心成员
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-35">
-                        <img alt="CBL" src="./static/people/liquan.png" width="246" />
-                        <h3 class="n-block">
-                            李权佑
-                        </h3>
-                        <span class="n-block">
-                            核心成员
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-36">
-                        <img alt="CBL" src="./static/people/liming.png" width="246"/>
-                        <h3 class="n-block">
-                            李明峰
-                        </h3>
-                        <span class="n-block">
-                            核心成员
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-37">
-                        <img alt="CBL" src="./static/people/hufei.jpg" width="246">
-                            <h3 class="n-block">
-                                胡非凡
-                            </h3>
-                            <span class="n-block">
-                                核心成员
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-38">
-                        <img alt="CBL" src="./static/people/lubing.png" width="246">
-                            <h3 class="n-block">
-                                陆斌泉
-                            </h3>
-                            <span class="n-block">
-                                核心成员
-                            </span>
-                        </img>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="n-part-eight teamAdvisor">
-            <div class="flytitle  clear">
-                <div class="line fl"></div>
-                <button class="fl">团队顾问</button> 
-                <div class="line fr"></div>
-            </div>
-            <ul class="n-coreteam n-table n-w700">
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-14">
-                        <img alt="NEO" src="./static/people/noel.jpg" width="246">
-                            <h3 class="n-block">
-                                Noel
-                            </h3>
-                            <span class="n-block">
-                                高通亚太技术副总裁
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-13">
-                        <img alt="NEO" src="./static/people/Jay.jpg" width="246">
-                            <h3 class="n-block">
-                                Kristof Kaiser
-                            </h3>
-                            <span class="n-block">
-                                资深顾问
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-15">
-                        <img alt="NEO" src="./static/people/chenda.jpg" width="246">
-                            <h3 class="n-block">
-                                陈大同
-                            </h3>
-                            <span class="n-block">
-                                清芯华创投委会主席
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-16">
-                        <img alt="NEO" src="./static/people/ma.jpg" width="246">
-                            <h3 class="n-block">
-                                马国琳
-                            </h3>
-                            <span class="n-block">
-                                资深顾问
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-17">
-                        <img alt="NEO" src="./static/people/xiezhi.jpg" width="246">
-                            <h3 class="n-block">
-                                谢志峰
-                            </h3>
-                            <span class="n-block">
-                                上海矽睿科技有限公司创始人
-                            </span>
-                        </img>
-                    </div>
-                </li>
-            </ul>
-            <ul class="n-coreteam n-table teamWidth n-w600">
-                
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-18">
-                        <img alt="NEO" src="./static/people/huyun.jpg" width="246">
-                            <h3 class="n-block">
-                                胡运旺
-                            </h3>
-                            <span class="n-block">
-                                IC咖啡董事长
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-19">
-                        <img alt="NEO" src="./static/people/wangli.jpg" width="246">
-                            <h3 class="n-block">
-                                王利杰
-                            </h3>
-                            <span class="n-block">
-                                PreAngel 合伙人
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-20">
-                        <img alt="NEO" src="./static/people/kong.png" width="246">
-                            <h3 class="n-block">
-                                孔华威
-                            </h3>
-                            <span class="n-block">
-                                中科院计算所上海分所所长
-                            </span>
-                        </img>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" >
-                        <img alt="NEO" src="./static/people/wang.jpg" width="246">
-                            <h3 class="n-block">
-                                王冠
-                            </h3>
-                            <span class="n-block">
-                                小蚁联合创始人 星云链联合创始人
-                            </span>
-                        </img>
-                    </div>
-                </li>
-            </ul>
-        </div>
-         <!--投资机构-->
-        <div class="n-mb-big" id="czjg">
-        </div>
-        <div class="n-part-six">
-            <div class="flytitle  clear">
-                <div class="line fl"></div>
-                <button class="fl">基石投资</button> 
-                <div class="line fr"></div>
-            </div>
-            <ul class="n-coreteam n-table n-w700 tbox">
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-10">
-                        <img class="tImg" alt="金沙江创业投资" src="./static/timg.png" /> 
-                        <h3 class="n-block">
-                            硅谷基金
-                        </h3>
-                        <span class="n-block">
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-10">
-                        <img class="tImg" alt="金沙江创业投资" src="./static/timg.png" /> 
-                        <h3 class="n-block">
-                            DFI基金
-                        </h3>
-                        <span class="n-block">
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <div class="n-people text-center md-trigger" data-modal="modal-10">
-                        <img class="tImg" alt="金沙江创业投资" src="./static/timg.png" /> 
-                        <h3 class="n-block">
-                            芯汇投资
-                        </h3>
-                        <span class="n-block">
-                            IC咖啡创投基金
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-10">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    IC咖啡，一种新型的高科技产业“链”俱乐部。由芯片、系统软硬件、IT互联、媒体、产业分析及科技投资等领域的高层管理且热心的业内资深人士共同组建。IC咖啡旨在通过汇聚产业内资深菁英人士，集聚大家的智慧与资源，共同打造一个高科技产业链的线下社交平台、科技传播平台、创新创业孵化平台及投融资资本平台，以促进中国高科技产业的发展。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--戈壁创投-->
-        <div class="md-modal md-effect-1" id="modal-11">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    Gobi Partners has offices in Shanghai, Beijing, and Southeast Asia, and is a professional venture capital company focusing on investing in China's early science and technology projects. Gobi fund's strategic investors include IBM, Sierra Ventures, The McGraw-Hill Companies, and Steamboat Ventures (Disney's venture capital sector), etc. It has invested in Tuniu, Camera360, CloudCare, and other famous start-ups, and is a veteran investment fund.
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--GBIC-->
-        <div class="md-modal md-effect-1" id="modal-12">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    GBIC (Global Blockchain Innovation Center) is a global hub for blockchain technology that provides investment, human capital, and resources for the development, acceleration and launch of blockchain projects. We utilize our global network of resources & investors from China, Russia, Europe & Korea to provide investment and services including Marketing & PR, community building, exchange listings, white paper and token analysis.
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-13">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    Luyufeng Cadence CTO, Kristof Kaiser Google VP
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-14">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    高通亚太区技术高管
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-15">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    在半导体、通讯等科技行业拥有逾30年企业运营和投资经验；现任清芯华创（北京市300亿集成电路产业基金的设计与封测子基金管理人）投委会主席，华山资本投资董事总经理，曾是展讯通信公司的共同创建人之一，豪微的共同创建人之一；IC咖啡联合创始人，IC咖啡集团公司名誉董事长。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-16">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    昀达资本董事长，IC咖啡发起人，从事天使投资超过20年；早年在美国休斯航天、惠普、安捷仑从事技术工作，2004年任展讯VP、深圳总经理，2007年至2010年在法国巴黎Polytechnic和DxO做图像方面的技术研究，2010年回国从事投资和创业；专长于光电和半导体等高科技行业的早中期投资。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-17">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    现为上海矽睿科技有限公司创始人、首席执行官，曾任中芯国际投资中心副总裁、系统晶片研发中心副总裁，上海先进半导体总裁兼执行董事，美国麻省理工学院新加坡研究生院院士(Fellow)及客座教授；拥有超过20年的集成电路领域运营管理、投融资经验；IC咖啡联合创始人，IC咖啡集团公司副董事长。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-18">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    2012年至今牵头发起IC咖啡，团结近300位IC产业链上中下游老总高管及数万热心粉丝，建立IC咖啡。IC咖啡由全球化产业社群俱乐部延伸为社群+科技服务公司，提供专业的IC产业政策咨询、科技媒体、科技会展、市场研究、创业孵化及投融资等服务。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-19">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    小蚁联合创始人,星云链联合创始人。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-20">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    中科院计算所上海分所所长，起点资本合伙人，italk沙龙创始人；关注区块链、物联网、虚拟现实、云计算、大数据以及人工智能等领域，投资众多项目；有浙江大学理论物理硕士学位和北京大学理论物理学士学位。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--Srikar Varadaraj-->
-        <div class="md-modal md-effect-1" id="modal-27">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    Srikar Varadaraj is the co-founder of Chain Intelligence, a blockchain consulting and research group dedicated to high-quality blockchain research. He received his Masters in Computer Science from Columbia University and is also the Head of Technical Research at the Columbia University Blockchain Lab, focusing on both the trading aspects of cryptocurrencies as well as the theoretical foundation of consensus algorithms and Byzantine Agreement. He actively consults with ICO projects, offering analysis of token sales and incentives of miners and users in the system. As a software developer he has worked at Google and conducted research in Number Theory and Algebraic Topology at Columbia. Srikar was also on the All-American Chess Team and has maintained a keen interest in AI and algorithms for improving computations in high dimensional spaces.
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--Kevin Choi-->
-        <div class="md-modal md-effect-1" id="modal-28">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    Kevin Choi is the co-founder of Chain Intelligence, a blockchain consulting and research group dedicated to high-quality blockchain research. He is also the Head of Applied Research at the Columbia University Blockchain Lab, exploring the applicational aspects of blockchain and cryptocurrency based on theoretical consensus models. Conducting market research of various protocols in the blockchain space, he actively consults nterested clients and reviews whitepapers for ICO projects. As a smart contract developer, he has written DApps (decentralized applications),   one of which is published on State of the DApps alongside EtherDelta, Storj, and OmiseGo. As a mathematician, he has conducted research in Number Theory, Algebraic Geometry, and   Theoretical Cryptography at Columbia.
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!-- -->
-        <div class="md-modal md-effect-1" id="modal-29">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-30">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--科银资本-->
-        <div class="md-modal md-effect-1" id="modal-31">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    CollinStar Capital is an Australian venture capital firm specialising in FinTech, blockchain and cryptocurrency investments. The company complies with Australian financial services laws and is the authorised representative under AFS license number 483761. Compliance is at the forefront of Collinstar’s priority. Established in 2015, CollinStar Capital has now become Australia’s and one of the world’s leading blockchain and cryptocurrency investment firms. CollinStar Capital was an early investor in many emerging cryptocurrencies, including Bitcoin, Ethereum and Litecoin. We have been involved in the launching of projects operating within the blockchain infrastructure, and established our cloud computing centre, along with other assets. Since the end of 2016, CollinStar Capital has provided venture capital to dozens of early blockchain projects which have been distributed all over the blockchain industry.
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--区块链合资企业-->
-        <div class="md-modal md-effect-1" id="modal-32">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    Blockchain Ventures is a close-ended fund that invests in cryptocurrency and digital assets, including through Initial Coin Offerings and Token Sales to achieve target returns. The Fund will also invest in the equity of predominantly Australian blockchain technology companies through an Australian based venture capital limited partnership to strengthen the Fund’s access to cryptocurrency and digital asset investment opportunities. The Fund has access to Token Sales and other cryptocurrency and digital asset investment opportunities, many of which are exclusive or proprietary deals, through the management team’s global business operations involving the whole value chain in the blockchain industry.  This includes Token Sale advisory, Token Sale crowdfunding platform, cryptocurrency exchange, cryptocurrency development, cryptocurrency payment platform, cryptography research lab provided jointly by Monash University, Hong Kong Polytechnic University and Shanghai Jiaotong University; equity based blockchain venture capital fund.  Key risks are managed through a due diligence process that applies the deep cryptocurrency trading experience of the Fund’s management team.
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-33">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-34">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    华南理工大学毕业，曾任德州仪器大中国区市场总监，Micrel大中国区总裁，中科院上海计算所副所长，IC咖啡创始人。硬件及互联网连续创业者。精通软硬件领域最核心知识体系具备超过20年实操经验，对于电子行业各个领域前沿技术有极其深入的理解和多年实战经验。广泛的全电子行业产业链人脉，丰富的欧美及本土技术、销售团队管理经验。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--CBL-->
-        <div class="md-modal md-effect-1" id="modal-35">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    李权佑，硅谷技术专家。计算机工程及企业管理背景,在美国硅谷参与多项高科技研发项目。曾任职于微软中国、Oracle硅谷总部，美国宇航局、Honeywell总部、IBM半导体研发中心等等高级研发管理岗位。有丰富的科技和技术背景、开发管理实践和科技投资经验。全球资深区块链技术专家。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <!--CBL-->
-        <div class="md-modal md-effect-1" id="modal-36">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    浙江大学电力电子本科硕士，曾就职于华为，美国IR全球技术专家，中国区汽车电子破冰团队负责人， 美国DIODES 电源及照明大中华区市场总监；多家国内芯片设计公司创始人或担任顾问。工科技术背景+芯片公司技术、应用、市场、销售及融资各环节工作及创业经历，在欧美企业积累丰富渠道管理及品牌运营经验，在国内设计公司创业经验。芯汇投资合伙人，专注于市场技术趋势研究、创业团队评估或辅导孵化及行业优势资源整合。精通多国语言并在早期参与区块链技术研究及投资。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-37">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    在公司战略，金融投资方面有深厚的理论架构及实际运营经验， 善于研究并挖掘早期趋势性投资机会。 精通多种语言文化， 长期在欧洲学习工作并任职于欧洲知名机构从事跨国投行业务， 曾参与多起跨国公司合作项目， 精通多种语言文化， 目前从事互联网及大数据领域投资并参与数个知名区块链项目早期投资， 对区块链与大数据领域有着深刻的理解与研究。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-modal md-effect-1" id="modal-38">
-            <div class="n-profile">
-                <p class="n-text-indent">
-                    上海海事大学毕业，高校科研工作学科带头人。崴澜网络创始人。长期耕耘于视屏系统和物联网领域，尤其对中国智能照明领域有突出贡献。紧跟各种前沿物联网技术，软件功底极强，并熟知软硬件结合及产业链上下游分工合作。对于区块链行业发展及底层技术理解深刻。
-                </p>
-                <button class="md-close btn-sm btn-primary">
-                    Close me!
-                </button>
-            </div>
-        </div>
-        <div class="md-overlay">
-        </div>
-        <!--发展历程-->
-        <div class="n-mb-big js-offset" id="al">
-        </div>
-        <div class="n-white-bg friendbox">
-            <h1 class="n-block text-center n-font-black n-mb5">
-                合作伙伴
-            </h1>
-            <div class="n-case">
-                <ul>
-                    <li>
-                        <img src="./static/company/1.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/2.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/3.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/4.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/6.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/7.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/8.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/9.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/10.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/11.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/12.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/13.jpg"/>
-                    </li>
-                    <li>
-                        <img src="./static/company/14.jpg"/>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <footer class="clear">
-            <img class="fl" src="./static/blogo.png" />
-            <h3 class="fl">OpenSource Chain</h3>
-        </footer>
-    </div>
-    <script src="./static/jquery.min.js">
-    </script>
-    <script src="./static/vedio.js">
-    </script>
-    <script src="./static/footerEnglish.js"></script>
-    <script src="./static/bootstrap.min.js">
-    </script>
-    <script src="./static/classie.js">
-    </script>
-    <script src="./static/modalEffects.js">
-    </script>
-    <script src="./static/index.js">
-    </script>
-    <!--<script src="../videojs/js/video.min.js"></script>-->
-    <script>
-        var vids=document.getElementById("vids");
-        vids.play();
-        //    var v = document.getElementById("video");
-        //    var playPauseVideoBtn = $("#playPauseVideo");
-        //    function playPauseVideo(event) {
-        //
-        //        event.stopPropagation();
-        //        if(v.paused){
-        //            v.play();
-        //            console.log('播放');
-        //            playPauseVideoBtn.hide();
-        //            console.log('隐藏播放按钮');
-        //
-        //        }else {
-        //            v.pause();
-        //            console.log('暂停');
-        //            playPauseVideoBtn.show();
-        //            console.log('显示播放按钮');
-        //
-        //        }
-        //
-        //    }
-        //    function showHidePlayPauseVideoBtn(event) {
-        //        event.stopPropagation();
-        //        if($(playPauseVideoBtn).is(":hidden")){
-        //            $(playPauseVideoBtn).show();    //如果元素为隐藏,则将它显现
-        //            console.log('显示播放按钮');
-        //        }else{
-        //            $(playPauseVideoBtn).hide();     //如果元素为显现,则将其隐藏
-        //            console.log('隐藏播放按钮');
-        //        }
-        //    }
-    </script>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="/logo.ico" mce_href="./logo.ico" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="./static1/css/bootstrap.min.css">
+	<link href="./static1/css/style.css" rel="stylesheet" type="text/css"/>
+	<script src="./static1/js/jquery.min.js"></script>
+	<script src="./static1/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximu-scale=1.0,minimum-scale=1.0,user-scalable=no">
+</head>
+<body>
+    <div class="navbar" role="navigation">
+	    <div class="container">
+		    <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse"
+		                data-target="#example-navbar-collapse">
+		            <span class="sr-only">切换导航</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+		        <div class="logobox clear">
+		        	<img src="./static1/blogo.png" class="fl" alt="">
+		        	<h1 class="fl">OpenSource Chain</h1>
+		        </div>
+		    </div>
+		    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+		        <ul class="nav navbar-nav">
+		            <li ><a href="#">主页</a></li>
+		            <li><a href="#">愿景</a></li>
+		            <li><a href="#">介绍</a></li>
+		            <li><a href="#">受众群体</a></li>
+		            <li><a href="#">优势</a></li>
+		            <li><a href="#">合作伙伴</a></li>
+		            <li><a href="#">介绍</a></li>
+		            <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                    English<b class="caret"></b>
+		                </a>
+		                <ul class="dropdown-menu">
+		                    <li><a href="#">中文</a></li>
+		                    <li><a href="#">英语</a></li>
+		                </ul>
+		            </li>
+		        </ul>
+		    </div>
+	    </div>
+	</div> 
+	<!-- <div class="videoBox">
+		<video src=""></video>		
+	</div> -->
+	<div class="sec goalBox">
+		<h2>愿景</h2>
+		<div class="break"></div>
+		<p>基于该平台，所有硬件领域开源、信息流动、价值流动</p>
+		<img src="./static1/img/zhizhu.png" alt="">
+	</div>
+	<div class="sec itemInroBox">
+		<h2>项目介绍</h2>
+		<div class="break"></div>
+		<p>
+			开源链（OSC）是第一个把电子行业的广义IP以智能合约的方法进行量化的平台。<br/>
+			开源链平台对区块基础设施中性 （包括以太坊 ，星云链等），来构建电子行业的IP应用层。<br /><br />
+			开源链平台用区块链技术驱动传统电子行业的技术开发流程、供应链、IP交易、媒体及网络社区的变革。<br />
+			把电子行业IP定量化，让数字资产能够自我演化，自我增值，增强参与者信任，从而把价值回馈给所有开源链的参与者。<br /><br />
+			开源链平台对区块基础设施中性 （包括以太坊 ，星云链等），来构建电子行业的IP应用层。
+		</p>
+	</div>
+	<div class="container sec suitperBox">
+		<h2>受众群体</h2>
+		<div class="break"></div>
+		<div class="row body">
+			<div class="col-md-4 col-xs-12">
+				<div class="orangeblcok engineer"></div>
+				<h3>工程师</h3>
+				<p>对工程师，可精准开源所储备专业知识，并获取长期超预期回报。</p>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="orangeblcok firm"></div>
+				<h3>硬件生产厂商</h3>
+				<p>对硬件生产厂商，可基于区块链技术对开源项目进行信任预审，极大的降低了试错成本及采购环节消耗。</p>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="orangeblcok company"></div>
+				<h3>芯片设计公司</h3>
+				<p>对芯片设计公司，可利用特定开源项目实现巨大的销售助推，尤其在所有芯片设计公司面临的积压库存的世界性难题上，可以通过使用库存芯片开源当下热门应用方式解决。</p>
+			</div>
+		</div>
+	</div>
+	<div class="sec platformBox">
+		<h2>平台价值</h2>
+		<div class="break"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-12 clear">
+					<div class="fl wallet"></div>
+					<div class="fr">
+						<h4>硬件钱包</h4>
+						<p>硬件行业规模巨大，单集成电路就是中国第一大进口商品（超过原油）：而其中一些应用爆发，经常造成某些芯片严重缺货。利用平台的智能合约可进行远期锁定及交易结算。</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 clear">
+					<div class="fl theme"></div>
+					<div class="fr">
+						<h4>硬件方案的交易</h4>
+						<p>在纯信息流动模式下，方案的交易完全无法量化。而基于区块链智能合约技术，极其适合方案交易，甚至可以以智能合约触发到各个时间节点：如电路原理图、电路原型、测试结果、小批量数据。</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-xs-12 clear">
+					<div class="fl chain"></div>
+					<div class="fr">
+						<h4>硬件链条所有数据留存及交易</h4>
+						<p>硬件产业链条上有无数微小节点，而数据（如数学推演数据、仿真数据、测试数据、小批量生产数据、大批量PPM数据）对于整个产业链安全高效运转都很重要。硬件链条的所有数据通过区块链技术留存及交易，并确权劳动者劳动量，给链条加入了大量润滑剂及安全垫，可以说是一次基于区块链软件技术的硬件革命。</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 clear">
+					<div class="fl idea"></div>
+					<div class="fr">
+						<h4>从IDEA到产品，极速实现</h4>
+						<p>评级优秀方案，社区投资人及硬件爱好者以OSC代币方式参与硬件项目众筹智能合约方式阶段性检验方案进展提升成功率，公平、高效、透明。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>   
+	<div class="sec termper">
+		<h2>团队成员</h2>
+		<div class="break"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/zhang.jpg" alt="">
+					<h5 class="type">NEO</h5>
+					<p>张洪为</p>
+					<p>核心成员</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/liquan.png" alt="">
+					<h5 class="type">CBL</h5>
+					<p>李权佑</p>
+					<p>核心成员</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/liming.png" alt="">
+					<h5 class="type">CBL</h5>
+					<p>李明峰</p>
+					<p>核心成员</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/zhang.jpg" alt="">
+					<h5 class="type">CBL</h5>
+					<p>莫阳</p>
+					<p>核心成员</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/lubing.png" alt="">
+					<h5 class="type">CBL</h5>
+					<p>陆斌泉</p>
+					<p>核心成员</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sec counselorBox">
+		<h2>团队顾问</h2>
+		<div class="break"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/noel.jpg" alt="">
+					<h5 class="type">Noel</h5>
+					<p>高通亚太技术<br>副总裁</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/Jay.jpg" alt="">
+					<h5 class="type">Kristof Kaiser</h5>
+					<p>资深顾问</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/ma.jpg" alt="">
+					<h5 class="type">马国琳</h5>
+					<p>资深顾问</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/jq.jpg" alt="">
+					<h5 class="type">Jinrong Qian</h5>
+					<p>VP at Texas Instruments</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/xiezhi.JPG" alt="">
+					<h5 class="type">谢志峰</h5>
+					<p>上海矽睿科技有限公司创始人</p>
+				</div>
+				
+			</div>
+			<div class="row brow">
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/huyun.jpg" alt="">
+					<h5 class="type">胡运旺</h5>
+					<p>IC咖啡董事长</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/wangli.jpg" alt="">
+					<h5 class="type">王利杰</h5>
+					<p>PreAngel 合伙人</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/kong.png" alt="">
+					<h5 class="type">孔华威</h5>
+					<p>中科院计算所上海分所所长</p>
+				</div>
+				<div class="col-md-1-5">
+					<img src="/static1/img/people/wang.jpg" alt="">
+					<h5 class="type">王冠</h5>
+					<p>小蚁联合创始人<br>星云链联合创始人</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sec investBox">
+		<h2>基石投资</h2>
+		<div class="break"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<img src="./static1/img/timg.png" alt="">
+					<h4>硅谷基金</h4>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<img src="./static1/img/timg.png" alt="">
+					<h4>DFI基金</h4>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<img src="./static1/img/timg.png" alt="">
+					<h4>芯汇投资<br>IC咖啡创投基金</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sec  cooperationBox">
+		<h2>合作伙伴</h2>
+		<div class="break"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/1.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/2.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/3.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/4.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/5.jpg" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/6.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/7.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/8.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/9.jpg" alt="">
+				</div>
+				<div class="col-md-1-5 col-sm-6">
+					<img src="./static1/img/company/10.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 wlogo">
+					<img src="./static1/bblogo.png" alt="">
+				</div>
+				<div class="col-md-offset-1 col-md-3 linkme">
+					<p>
+					联系我们<br/>
+					info@add.com<br/>
+					+12(0)445577<br/>
+					xxxroad #200-5,china,018541
+					</p>
+				</div>
+				<div class="col-md-offset-1 col-md-3 tech">
+					<p>
+					技术支持 <br/>
+					support@opendd.com
+					</p>
+				</div>
+			</div>
+		</div>
+		<h4 class="state">2017opensource foundation© All rights reserved.沪ICP备15049768号-2</div>
+	</div>
 </body>
+</html>
