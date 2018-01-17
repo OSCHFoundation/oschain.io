@@ -20,3 +20,4 @@ body{ font-size:12px; font-family:"微软雅黑";}
 /* top */
 .topbar{ height: 90px; width: 100%; background: #00438f;  }
 .container{  width: 1200px; height: 200px; }
+footer p{ font-size: 18px; line-height: 33px; }

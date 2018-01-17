@@ -1137,8 +1137,7 @@ footer{
 footer{ height: 146px;  }
 footer img{ width: 54px; height: 54px; margin-top: 54px;  margin-left: 92px; }
 footer h3{ margin-top: 72px; margin-left: 20px; }
+footer p{ font-size: 18px; line-height: 33px; }
 .tbox{ margin-top: 40px; }
 body{ background: #282828; }
 .md-modal p{ font-size: 18px; }
-
-.state{ width: 100%; height: 50px; line-height: 50px;  text-align: center; }
