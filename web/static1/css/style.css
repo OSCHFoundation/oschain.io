@@ -32,6 +32,7 @@
 		float: left;
 	}
 }
+
 /* reset */
 body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin:0;padding:0;}
 em{font-style:normal}
@@ -73,13 +74,13 @@ body{ font-size:12px; font-family:"微软雅黑";}
 	color: #ec8e25;
 }
 .toppic{ width: 1200px; margin: 0 auto; } 
-.navbar{ margin-bottom: 0; position: fixed; z-index: 99; width: 100%;} 
+.navbar{ margin-bottom: 0; position: fixed; z-index: 99; width: 100%; background: #050f1a;} 
 .logobox h1{ font-size: 18px; height: 90px; line-height: 90px; color: #fff; } 
 .logobox img{ width: 50px; height: 50px; margin-top: 20px;  }
 
 .navbar-toggle .icon-bar{ background: #fff; margin-top: 17px;}
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{ background:#00438f;  }
-
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{ background: rgba(0,0,0,0); }
+.navbar-nav>li>a{ color: #fff; }
 /* 愿景 */
 .sec{ text-align: center; padding-top: 1px; padding-bottom: 1px; }
 .sec>h2 { font-size: 2.5em; color: #263d71; text-transform: uppercase; font-weight: 500; margin-top: 108px; margin-bottom: 20px;}
@@ -182,8 +183,7 @@ body{ font-size:12px; font-family:"微软雅黑";}
 
 
 .cooperationBox .container{ margin-bottom: 60px;} 
-.cooperationBox .row{ margin-top: 42px; }
-.cooperationBox img{ width: 207px; height: 78px; }
+.cooperationBox img{ width: 207px; height: 78px; margin-top: 42px; }
 
 
 
@@ -211,4 +211,4 @@ body{ font-size:12px; font-family:"微软雅黑";}
 .model h4{ color: #fff; }
 .model p{ color: #fff; font-size: 14px; line-height: 25px; margin-top: 5px; }
 
-.videobox video{ width: 100%; }
+.videobox video{ width: 100%; padding-top:92px; }
