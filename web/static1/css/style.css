@@ -222,3 +222,5 @@ body{ font-size:12px; font-family:"微软雅黑";}
 }
 .model h4{ color: #fff; }
 .model p{ color: #fff; font-size: 14px; line-height: 25px; margin-top: 5px; }
+
+.videobox video{ width: 100%; }
