@@ -15,14 +15,24 @@ function browserRedirect(){
 	}
 }
 $(function(){
-	$('.col-md-1-5').mouseover(function(event) {
-		$(this).find('.model').show();
-	});
-	$('.col-md-1-5').mouseout(function(event) {
-		$(this).find('.model').hide();
-	});
 	$('.videobox video').css('height',$(window).height());
 	if(browserRedirect()){
 		document.getElementById("videojs").controls = true;
+		$('.col-md-1-5').click(function(event) {
+				$('.model').hide();
+			$(this).find('.model').show();
+		});
+
+		$('.container').on('click', '.model', function(event) {
+			$('.model').hide();
+			/* Act on the event */
+		});
+	}else{
+		$('.col-md-1-5').mouseover(function(event) {
+			$(this).find('.model').show();
+		});
+		$('.col-md-1-5').mouseout(function(event) {
+			$(this).find('.model').hide();
+		});
 	}
 })
