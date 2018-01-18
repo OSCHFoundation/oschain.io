@@ -5,4 +5,5 @@ $(function(){
 	$('.col-md-1-5').mouseout(function(event) {
 		$(this).find('.model').hide();
 	});
+	$('.videobox video').css('height',$(window).height());
 })
