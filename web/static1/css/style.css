@@ -84,7 +84,7 @@ body{ font-size:12px; font-family:"微软雅黑";}
 /* 愿景 */
 .sec{ text-align: center; padding-top: 1px; padding-bottom: 1px; }
 .sec>h2 { font-size: 2.5em; color: #263d71; text-transform: uppercase; font-weight: 500; margin-top: 108px; margin-bottom: 18px;}
-.sec p{ font-size: 1.52em; }
+.sec p{ font-size: 1.4em;  }
 .sec .break{ width: 15em; border: 1px solid #f3f4f7; margin: 0 auto; position: relative; }
 .sec>.break:after {
     width: 7em;
@@ -188,7 +188,7 @@ body{ font-size:12px; font-family:"微软雅黑";}
 .footer .row{ padding: 70px 0; }
 .footer p{ font-size: 18px; line-height: 31px; }
 .footer .wlogo{ margin-left: 40px; }
-.state{ width: 100%; height: 50px; line-height: 50px;  text-align: center; background: #0d253f; color: #fff; font-size: 18px;}
+.state{ width: 100%; height: 50px; line-height: 50px;  text-align: center; background: #0d253f; color: #fff; font-size: 14px;}
 
 
 .model{
@@ -221,3 +221,64 @@ body{ font-size:12px; font-family:"微软雅黑";}
 	.itemInroBox p{ line-height: 18px;  }
 	.platformBox .row .fr p{   font-size: 1em; line-height: 18px; }
 }
+.linkMedia a:hover,a:focus{ text-decoration: none;  }
+.linkMedia .row{ margin-top: 40px; }
+.btn-social {
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1rem;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    letter-spacing: 0;
+    border: #fff 1px solid;
+}
+.btn-r-padding:first-child { margin-left: 2em; }
+.big-icon { font-size: 4rm; width: 4em; height: 4em; line-height: 2em; margin-bottom: 0.5em; }
+.big-icon i { line-height: 4em; width: 4em;  font-size: 2em;  }
+.btn-social i { color: #fff; top: 0; line-height: 2em; width: 2em; font-size: 2em; }
+
+.btn-red-reddit{  background: #ec4e27; border: none; }
+.btn-blue-light{ background: #5bc1f4; border: none; }
+.btn-blue-facebook{ background: #405a93; border: none; }
+.btn-blue-facebook i{ margin-left: -8px; margin-top: -4px; }
+.btn-black{ background: #333; border: none;  }
+.btn-r-padding{ margin-right: 2em; }
+
+.btn-black:hover {
+    background: #000;
+    color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+.btn-red-reddit:hover {
+    background: #000;
+    color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+.btn-blue-light:hover {
+    background: #000;
+    color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+.btn-blue-facebook:hover {
+    background: #000;
+    color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
