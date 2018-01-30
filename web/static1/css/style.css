@@ -84,7 +84,7 @@ body{ font-size:12px; font-family:"微软雅黑";}
 /* 愿景 */
 .sec{ text-align: center; padding-top: 1px; padding-bottom: 1px; }
 .sec>h2 { font-size: 2.5em; color: #263d71; text-transform: uppercase; font-weight: 500; margin-top: 108px; margin-bottom: 18px;}
-.sec p{ font-size: 1.4em;  }
+.sec p{ font-size: 1.25em;  }
 .sec .break{ width: 15em; border: 1px solid #f3f4f7; margin: 0 auto; position: relative; }
 .sec>.break:after {
     width: 7em;
@@ -197,7 +197,7 @@ body{ font-size:12px; font-family:"微软雅黑";}
 	margin-left: -10px;
 	width: 100%;
 	min-height: 100%;
- 	background-color: rgba(26,53, 83,0.9);
+ 	background-color: rgba(26,53, 83,0.4);
  	position: absolute;
  	top: 0;
  	color: #fff;
