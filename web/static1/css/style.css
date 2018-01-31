@@ -281,4 +281,6 @@ body{ font-size:12px; font-family:"微软雅黑";}
     -o-transition: background .3s ease-in-out;
     transition: background 0.3s ease-in-out;
 }
-
+#mc_embed_signup{ margin-top: 20px; }
+#mc_embed_signup input.email{ width: 40%; height: 45px; padding-left: 20px;}
+#mc_embed_signup .button{ height: 43px; }
