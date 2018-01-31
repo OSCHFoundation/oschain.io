@@ -214,13 +214,7 @@ body{ font-size:12px; font-family:"微软雅黑";}
 .videobox video{ display: block; width: 100%; height: 1050px;  margin: 0 auto;  padding-top:0px; }
 .navbar{ background: rgba(22,20,35,0.5); } 
 
-@media (max-width: 768px){
-	.goalBox img{ width: 90%; margin-top: 50px;  margin-bottom: 50px;}
-	.sec p{  font-size: 1em; }
-	.sec p{  line-height: 18px; }
-	.itemInroBox p{ line-height: 18px;  }
-	.platformBox .row .fr p{   font-size: 1em; line-height: 18px; }
-}
+
 .linkMedia a:hover,a:focus{ text-decoration: none;  }
 .linkMedia .row{ margin-top: 40px; }
 .btn-social {
@@ -284,3 +278,11 @@ body{ font-size:12px; font-family:"微软雅黑";}
 #mc_embed_signup{ margin-top: 20px; }
 #mc_embed_signup input.email{ width: 40%; height: 45px; padding-left: 20px;}
 #mc_embed_signup .button{ height: 43px; }
+@media (max-width: 768px){
+    .goalBox img{ width: 90%; margin-top: 50px;  margin-bottom: 50px;}
+    .sec p{  font-size: 1em; }
+    .sec p{  line-height: 18px; }
+    .itemInroBox p{ line-height: 18px;  }
+    .platformBox .row .fr p{   font-size: 1em; line-height: 18px; }
+    #mc_embed_signup input.email{ width: 100%; height: 45px; padding-left: 20px;}
+}
