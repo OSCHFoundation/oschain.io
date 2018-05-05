@@ -8,6 +8,6 @@ app.use(express.static('../web'));
 	console.log('aaa');
 	next();
 })*/
-app.listen(4000,function(){
+app.listen(80,function(){
 	console.log("listen to 80");
 });
