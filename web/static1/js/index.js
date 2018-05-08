@@ -3,6 +3,7 @@ if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
 };
 $(function(){
 	$('.videobox video').css('height',$(window).height());
+    $('.pictureBox').css('height',$(window).height());
 	if(browserRedirect()){
 		document.getElementById("videojs").controls = true;
 		$('.col-md-1-5').click(function(event) {
